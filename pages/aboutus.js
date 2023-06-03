@@ -72,7 +72,7 @@ const AboutUs = () => {
 
         </div>
 
-        <div className={styles.image}>
+        <div   style={{ paddingLeft: "20px" }} className={styles.image}>
           <Image src={image1} alt='image' />
           <div style={{ paddingLeft: "10px" }}>
             <h2>Anonymous

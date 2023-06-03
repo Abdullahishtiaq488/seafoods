@@ -73,14 +73,14 @@ width: 100%;
 .logo{
   color: gray;
   font-size: 18px;
-
 }
+
 .links{
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: larger;
-  font-weight: bold;
+  font-weight: 500;
   gap: 40px;
 }
 
@@ -166,6 +166,7 @@ width: 100%;
   line-height: 0.9; 
   width: 100%;
   text-align: left;
+  transition: transform 0.3s;
 
 }
 .hero-banner-container .beats-solo{
@@ -202,13 +203,74 @@ width: 100%;
   margin-top: 20px;
   text-transform: uppercase;
 }
+
+
 .hero-banner-image{
  position: absolute;
  right: 8%;
- top: 150px;
-  max-width: 250px;
-  max-height: 270px;
+ top: 230px;
+  width: 250px;
+  height: 270px;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
+
+.hero-banner-image:hover{
+  transform: scale(1.1);
+ }
+
+.hero-banner-image2{
+  position: absolute;
+  right: 18%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
+ }
+
+ .hero-banner-image3{
+  position: absolute;
+  right: 28%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
+ }
+
+ .hero-banner-image, .hero-banner-image2, .hero-banner-image3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 270px;
+  opacity: 0;
+  animation: flyInFromLeft 1s ease-out forwards;
+}
+
+
+
+@keyframes flyInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.hero-banner-image2 {
+  animation-delay: 0.5s;
+}
+
+.hero-banner-image3 {
+  animation-delay: 1s;
+}
+
+
+
 .image2{
   background-image: url("../public/salts.jpg");
   background-position: bottom;
