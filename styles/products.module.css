@@ -12,7 +12,10 @@
 
 .productlist{
     display: flex;
-    flex-direction: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
 }
 
 .product{
@@ -24,5 +27,6 @@
 }
 
 .product .content{
+    margin-top: 15px;
 
 }
