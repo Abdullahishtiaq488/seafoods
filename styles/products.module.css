@@ -1,0 +1,28 @@
+.products{
+    padding: 20px;
+    height: auto;
+}
+
+
+.heading{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.productlist{
+    display: flex;
+    flex-direction: space-between;
+}
+
+.product{
+ border: 2px solid black;
+ width: 400px;
+ height: auto;
+ margin: 10px;
+ padding: 10px;
+}
+
+.product .content{
+
+}

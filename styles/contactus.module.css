@@ -1,27 +1,50 @@
 .contactus {
     height: auto;
+    padding: 20px;
 }
+.contactus p {
 
+    font-size: 20px;
+    font-weight: bold;
+}
 .names {
+
     display: flex;
     flex-direction: row;
 }
 
 .form {
-    width: 80%;
+    width: 99%;
     height: auto;
     border: 2px solid black;
     padding: 20px;
 }
 
+
+
 .form .inputs {
     width: 50%;
-    margin: 5px;
+    margin: 3px;
+    height: 40px;
 }
+
+.names .ps{
+    width: 51%;
+}
+
 
 .form .inputl {
     width: 99%;
     margin: 5px;
+    height: 40px;
+}
+
+.form .textareas{
+    height: 80px;
+}
+
+.names .pl{
+    width: 99%;
 }
 
 .section {
@@ -29,8 +52,22 @@
     flex-direction: row;
 }
 
-.heading {
-    margin-top: 10px;
-    margin-bottom: 50px;
+.heading{
+    
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
+
+
+.image{
+    border: 2px solid black;
+}
+
+
+@media (max-width: 768px) {
+    .section{
+        flex-direction: column;
+    }
+  }
+  

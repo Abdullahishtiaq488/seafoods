@@ -1,9 +1,59 @@
 .aboutus{
-    margin-top: 30px;
+    padding: 20px;
     height: auto;
 }
 
 .heading{
     
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.image{
+    width: 50%;
+}
+
+.texts{
+    width: 50%;
+}
+
+.texts p{
+    font-style: italic;
+    margin: 15px;
+}
+
+.address{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 15px;
+    background-color:  brown;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.address .first{
+    width: 90%;
+}
+
+.address .buttons button{
+    border-radius: 10%;
+    height: 40px;
+    width: 100px;
+
+}
+
+.address .buttons button:hover{
+    background-color: goldenrod;
+    color: white;
+
 }
