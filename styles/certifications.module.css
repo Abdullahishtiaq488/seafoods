@@ -1,0 +1,35 @@
+/* certifications.module.css */
+  
+.certifications{
+    height: auto;
+}
+
+
+  .flexContainer {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  
+  .images{
+    margin-top: 30px;
+    border: 2px solid black;
+    padding: 15px;
+    max-width: 400px;
+    max-height: auto;
+  }
+
+
+  @media (max-width: 768px) {
+    .flexContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .images{
+        width: 90%;
+    }
+  }
+  

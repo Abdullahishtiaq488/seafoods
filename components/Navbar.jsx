@@ -16,6 +16,15 @@ const Navbar = () => {
       <Image src={ Logo } width={110} height={100} alt="pic" />
       </div> 
 
+<div className='links'>
+
+  <Link href="/"><p>Home</p></Link>
+  <Link href="/products"><p>Products</p></Link>
+  <Link href="/aboutus"><p>AboutUs</p></Link>
+  <Link href="/certifications"><p>Certification</p></Link>
+  <Link href="/contactus"><p>ContactUs</p></Link>
+
+</div>
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping />

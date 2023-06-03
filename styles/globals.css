@@ -17,7 +17,8 @@ a {
 }
 
 .main-container{
-max-width: 1400px; 
+max-width: 1400px;
+height: auto; 
 margin: auto;
 width: 100%;
 
@@ -74,6 +75,28 @@ width: 100%;
   font-size: 18px;
 
 }
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+  gap: 40px;
+}
+
+.links p{
+  color: gray;
+  opacity: 1px;
+}
+
+.links p:hover {
+  color: black;
+}
+
+.liks p:active{
+  color: black;
+}
+
 .cart-icon{
   font-size: 25px;
   color: gray;
@@ -826,5 +849,8 @@ margin-top: 160px;
 @media  screen and (max-width:460px) {
   .footer-container{
   flex-direction: column;}
+  .links{
+    display: none;
+  }
   
 }

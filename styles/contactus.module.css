@@ -1,0 +1,36 @@
+.contactus {
+    height: auto;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.form .inputs {
+    width: 50%;
+    margin: 5px;
+}
+
+.form .inputl {
+    width: 99%;
+    margin: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
