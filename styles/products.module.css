@@ -1,35 +1,45 @@
-.products{
+.products {
     padding: 20px;
     height: auto;
-}
-
-
-.heading{
+  }
+  
+  .heading {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-.heading h1{
+  }
+  
+  .heading h1 {
     font-size: 50px;
-}
-
-.productlist{
+  }
+  
+  .productlist {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: auto;
-}
-
-.product{
- border: 2px solid black;
- width: 400px;
- height: auto;
- margin: 10px;
- padding: 10px;
-}
-
-.product .content{
+  }
+  
+  .product {
+    border: 2px solid black;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    animation: zoomIn 0.5s ease-in-out;
+  }
+  
+  .product .content {
     margin-top: 15px;
-
-}
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

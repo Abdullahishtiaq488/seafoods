@@ -7,6 +7,22 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+.form input[type="text"] {
+    /* Add your desired styling properties */
+    
+    font-size: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* ... and more */
+  }
+
+.form textarea{
+    font-size: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .names {
 
     display: flex;

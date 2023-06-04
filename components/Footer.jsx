@@ -52,11 +52,12 @@ const Footer = () => {
        {/* Strip */}
 
       <div className="strip">
-        <p>All Rights Reserved © Copyright 2021 - Super Foods <AiFillInstagram style={{float:"right", marginLeft:"10px"}} />
+        <p>All Rights Reserved © Copyright 2021 - Super Foods
+          <div className='jack' > <AiFillInstagram style={{float:"right", marginLeft:"10px"}} />
           <AiOutlineTwitter style={{float:"right", marginLeft:"10px" }}/>
            <AiFillFacebook style={{float:"right", marginLeft:"10px" }}/> 
            <AiFillYoutube style={{float:"right", marginLeft:"10px" }} />
-            <AiFillLinkedin style={{float:"right", marginLeft:"10px" }}/> </p>
+            <AiFillLinkedin style={{float:"right", marginLeft:"10px" }}/></div>  </p>
         
           
         
