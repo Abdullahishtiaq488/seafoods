@@ -32,6 +32,7 @@ width: 100%;
   justify-content: space-between;
   margin: 6px 18px;
   position: relative;
+  align-items: center;
 }
 
 .navbar-container .logos{
@@ -93,9 +94,41 @@ width: 100%;
   color: black;
 }
 
-.liks p:active{
-  color: black;
+.links p.active {
+  color: black; /* Active link color */
 }
+
+
+.menu-icon {
+  display: none; /* Hidden by default on larger screens */
+  background: none;
+  border: 2px solid gray;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block; /* Show the menu icon on smaller screens */
+  }
+
+  .links {
+    display: none; /* Hide the links by default on smaller screens */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 30px;
+    z-index: 999;
+  }
+
+  .links.open {
+    display: flex; /* Show the links when menu is open */
+    flex-direction: column; /* Display the links in a column */
+  }
+}
+
 
 .cart-icon{
   font-size: 25px;
@@ -166,17 +199,40 @@ width: 100%;
   line-height: 0.9; 
   width: 100%;
   text-align: left;
-  transition: transform 0.3s;
-
-}
-.hero-banner-container .beats-solo{
-  font-size: 20px;
-  margin-top: 70px;
   color: white;
 }
+
+
+
+                                                    /* TEXT A */
+
 .hero-banner-container .texta{
- padding: 40px;
+ margin-top: 10%;
+ margin-left: 5%;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
+
 }
+
+.image2 .texta2{
+
+margin-top: 10%;
+margin-left: 5%;
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+}
+
+.image3 .texta3{
+  margin-top: 10%;
+ margin-left: 5%;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
+}
+
+                                            /* BUTTON */
 
 .hero-banner-container button{
    border-radius: 15px;
@@ -184,45 +240,86 @@ width: 100%;
   background-color: #a6252a;
   color: white;
   border: none;
-  margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   z-index:10000 !important;
 }
 
+.image2 button{
+  border-radius: 15px;
+ padding: 10px 16px;
+ background-color: #a6252a;
+ color: white;
+ border: none;
+ font-size: 18px;
+ font-weight: 500;
+ cursor: pointer;
+ z-index:10000 !important;
+}
+
+.image3 button{
+  border-radius: 15px;
+ padding: 10px 16px;
+ background-color: #a6252a;
+ color: white;
+ border: none;
+ font-size: 18px;
+ font-weight: 500;
+ cursor: pointer;
+ z-index:10000 !important;
+}
+
+                                              /* H 3 */
+
+
 .hero-banner-container h3{
   font-size: 3rem;
   color: #fff;
-  margin-top: 34px;
 }
+
+.image2 h3{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.image3 h3{
+  font-size: 3rem;
+  color: #fff;
+}
+
+                                              /* H 1 */
+
 .hero-banner-container h1{
   color: white;
-  font-size: 8em;
-  margin-left: -20px;
-  margin-top: 20px;
+  font-size: 7em;
+  text-transform: uppercase;
+}
+
+.image2 h1{
+  color: white;
+  font-size: 7em;
+  text-transform: uppercase;
+}
+
+.image3 h1{
+  color: white;
+  font-size: 7em;
   text-transform: uppercase;
 }
 
 
 .hero-banner-image{
  position: absolute;
- right: 8%;
+ right: 10%;
  top: 230px;
   width: 250px;
   height: 270px;
-  display: inline-block;
-  overflow: hidden;
-  transition: transform 0.3s;
 }
-
-.hero-banner-image:hover{
-  transform: scale(1.1);
- }
 
 .hero-banner-image2{
   position: absolute;
-  right: 18%;
+  right: 20%;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
@@ -230,7 +327,7 @@ width: 100%;
 
  .hero-banner-image3{
   position: absolute;
-  right: 28%;
+  right: 30%;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
@@ -271,17 +368,38 @@ width: 100%;
 
 
 
+
 .image2{
-  background-image: url("../public/salts.jpg");
-  background-position: bottom;
-  height: 100%;
+
+  background: linear-gradient(rgba(0,0,0,0.441),rgba(0, 0, 0, 0.441)),
+   url("../public/salts.jpg");
+    
+  background-position: bottom left;
+  height: 100% !important;
   background-size: cover;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  padding: 100px 40px;
+  height: 600px;
+  line-height: 0.9; 
+  width: 100%;
+  transition: transform 0.3s;
 }
+
 .image3{
-  background-image: url("../public/chawal.jpg");
-  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.441),rgba(0, 0, 0, 0.441)),url("../public/chawal.jpg");
+  background-position: bottom left;
+  height: 100% !important;
   background-size: cover;
-  background-position: bottom;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  padding: 100px 40px;
+  height: 600px;
+  line-height: 0.9; 
+  width: 100%;
+  transition: transform 0.3s;
 }
 
 .desc{
@@ -779,7 +897,7 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
+    width: 47%;
     left: 30%;
     top: 6%;
     height: 56%
@@ -914,5 +1032,73 @@ margin-top: 160px;
   .links{
     display: none;
   }
-  
+
+  .hero-banner-container {
+    background-size: 350%;
+  }
+  .image2 {
+    background-position: right;
+  }
+  .image3 {
+    background-position: left;
+    background-size: 200%;
+  }
+
+  .hero-banner-image{
+    max-width: 50px;
+    max-height: 70px;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+  .hero-banner-image2{
+    max-width: 50px;
+    max-height: 70px;
+    top: 65%;
+  }
+  .hero-banner-image3{
+    max-width: 50px;
+    max-height: 70px;
+    top: 65%;
+  }
+
+  .hero-banner-container .texta{
+    padding-top: 30%;
+  }
+  .hero-banner-container button{
+    margin-top: 1px;
+  }
+  .hero-banner-container h1{
+    font-size: 4rem;
+  }
+  .hero-banner-container h3{
+    font-size: 2rem;
+  }
+
+  .image2 .texta2{
+    padding-top: 30%;
+  }
+  .image3 .texta3{
+    padding-top: 30%;
+  }
+
+  .image2 h1{
+    font-size: 4rem;
+  }
+  .image2 h3{
+    font-size: 2rem;
+  }
+  .image3 h1{
+    font-size: 4rem;
+  }
+  .image3 h3{
+    font-size: 2rem;
+  }
+  .footer-banner-image{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    
+    margin-left: 30px;
+  }
 }
