@@ -103,6 +103,7 @@ width: 100%;
   display: none; /* Hidden by default on larger screens */
   background: none;
   border: 2px solid gray;
+  border-radius: 10px;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -326,6 +327,12 @@ row-gap: 20px;
  top: 230px;
   width: 250px;
   height: 270px;
+
+  transition: transform 2s ease-in-out; 
+}
+
+.hero-banner-image:hover{
+  transform: scale(1.28);
 }
 
 .hero-banner-image2{
@@ -334,6 +341,12 @@ row-gap: 20px;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
+   transition: transform 2s ease-in-out; 
+ }
+
+ .hero-banner-image2:hover{
+  transform: scale(1.28);
+  
  }
 
  .hero-banner-image3{
@@ -342,6 +355,12 @@ row-gap: 20px;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
+   transition: transform 2s ease-in-out ; 
+ }
+
+ .hero-banner-image3:hover{
+  transform: scale(1.28);
+  
  }
 
  .hero-banner-image, .hero-banner-image2, .hero-banner-image3 {
@@ -959,7 +978,7 @@ margin-top: 160px;
     height: 350px;
   }
   .cart-container{
-    width: 415px;
+    width: 355px;
   padding: 4px;
   }
   .cart-heading{

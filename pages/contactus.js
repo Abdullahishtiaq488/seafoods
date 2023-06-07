@@ -10,10 +10,11 @@ const ContactUs = () => {
 
       <div className={styles.heading}>
         <h1>Send us an Email, Now!</h1>
-        <hr style={{ marginLeft: "20%", marginRight: "20%", marginTop: "15px" }} />
+        <hr style={{ marginLeft: "25%", marginRight: "25%", marginTop: "15px" }} />
       </div>
 
       <div className={styles.section}>
+        
         
           <Image src={ tasveer} alt="sections2" />
         
@@ -22,27 +23,35 @@ const ContactUs = () => {
 
           <form>
 
-          <div style={{marginBottom:"10px"}} className={styles.names}>
-            <p className={styles.ps}> Name:</p> <p className={styles.ps}> Email:</p>
+          <div className={styles.names}>
+            <div>
+            <p > Name:</p> <input type='text'></input>
+            </div>
+            <div>
+            <p >Subject:</p> <input  type='text'></input> 
+            </div>
+             
+          </div>
+
+            <div className={styles.names}>
+            <div>
+            <p > Email:</p> <input type='text'></input>
+            </div>
+            <div>
+            <p style={{marginBottom:"5px"}} >Contact Details:</p> <input type='text'></input> 
             </div>
 
-            <div style={{marginBottom:"10px"}} className={styles.names}>
-            <input className={styles.inputs} type='text'></input> <input className={styles.inputs} type='text'></input> 
-            </div>
+          </div>
 
-            <div style={{marginBottom:"10px"}} className={styles.names}>
-            <p className={styles.ps}>Subject:</p> <p className={styles.ps}> Contact Details:</p>
-            </div>
+            
 
-            <div style={{marginBottom:"10px"}} className={styles.names}>
-            <input className={styles.inputs} type='text'></input> <input className={styles.inputs} type='text'></input>
-            </div>
+            
 
-            <p className={styles.pl}>Company Name: </p>
-            <input style={{marginBottom:"10px"}} className={styles.inputl} type='text'></input>
+            <p style={{marginBottom:"5px"}}>Company Name: </p>
+            <input type='text'></input>
             <p className={styles.pl}>Message:</p>
 
-            <textarea style={{width:"100%",marginTop:"10px"}} id="message" name="message" rows="7" ></textarea>
+            <textarea style={{width:"99%", marginTop:"15px"}} id="message" name="message" rows="6" ></textarea>
 
             </form>
 

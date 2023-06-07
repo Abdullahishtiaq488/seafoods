@@ -8,6 +8,8 @@
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
+    color: gray;
+    font-weight: bolder;
 }
 
 .heading h1{
@@ -39,7 +41,7 @@
     border: 2px solid black;
     padding: 20px;
     margin: 15px;
-    background-color:  brown;
+    background-color:firebrick;
     color: white;
     display: flex;
     flex-direction: row;
@@ -73,6 +75,9 @@
  .image{
     width: 100%;
     
+ }
+ .heading h1{
+    font-size: 40px;
  }
   }
   
