@@ -1,0 +1,64 @@
+.aboutus h2{
+    color: white;
+}
+
+.aboutus {
+    padding: 20px;
+    display: flex;
+    flex-direction: space-evenly;
+}
+
+.picContainer {
+    width: 40%;
+    height: 100%;
+}
+
+.toptext {
+    width: 64%;
+    padding: 30px;
+    background: linear-gradient(rgba(255, 0, 0, 0.919),rgba(255, 0, 0, 0.919));
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.icons {
+    width: 15%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.icondiv {
+    position: absolute;
+    border: 1px solid white;
+    padding: 9px 10px 9px 10px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.text {
+    width: 79%;
+    
+}
+
+@media (max-width: 768px) {
+   .picContainer{
+    display: none;
+   }
+   .aboutus{
+    text-align: center;
+   }
+   .toptext{
+    width: 99%;
+   }
+  } 

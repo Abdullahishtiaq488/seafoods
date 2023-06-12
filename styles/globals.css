@@ -397,6 +397,12 @@ row-gap: 20px;
 }
 
 
+.production {
+  background: linear-gradient(rgba(0,0,0,0.681),rgba(0, 0, 0, 0.681)), url("../public/fields.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto;
+}
 
 
 .image2{

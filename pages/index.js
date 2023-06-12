@@ -1,21 +1,51 @@
 import React from 'react';
 
 import { client } from '../lib/client';
+import Image from 'next/image';
 import { Product, FooterBanner, HeroBanner } from '../components';
+import { Certification } from '../components';
+import { AboutUs } from '../components';
+import { Membership } from '../components';
+import { Production } from '../components';
+
+
 
 const Home = ({ products, bannerData }) => (
   <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
-    <div className="products-heading">
+    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+
+    {/* <div className="products-heading">
       <h2>Best Seller Products</h2>
       <p>Here are some of our best products</p>
+    </div> */}
+
+   
+
+    <div>
+      <Membership />
     </div>
 
-    <div className="products-container">
-      {products?.map((product) => <Product key={product._id} product={product} />)}
+    <div className='products-container'>
+      <AboutUs />
     </div>
 
-    <FooterBanner footerBanner={bannerData && bannerData[0]} />
+    
+
+    <div>
+      {/* {products?.map((product) => <Product key={product._id} product={product} />)} */}
+      <Certification />
+    </div>
+
+    <div className='products-container'>
+      <Production />
+    </div>
+    
+
+    <div>
+
+    </div>
+
+    {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>
 );
 
