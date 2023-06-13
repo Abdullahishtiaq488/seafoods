@@ -3,6 +3,15 @@
     height: auto;
 }
 
+.textsA{
+    text-align: left;
+}
+.textsA p{
+    font-style: italic;
+    margin: 15px;
+    font-weight: light;
+}
+
 .heading{
     
     text-align: center;

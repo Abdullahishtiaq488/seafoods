@@ -3,26 +3,25 @@
 }
 
 .aboutus {
-    padding: 20px;
+    
     display: flex;
-    flex-direction: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+    
 }
 
-.picContainer {
-    width: 40%;
-    height: 100%;
-}
+
 
 .toptext {
-    width: 64%;
-    padding: 30px;
+    width: 66%;
+    padding: 40px;
     background: linear-gradient(rgba(255, 0, 0, 0.919),rgba(255, 0, 0, 0.919));
+    
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .boxes {
     display: flex;
@@ -31,14 +30,14 @@
 }
 
 .icons {
-    width: 15%;
+    width: 11%;
     padding: 10px;
-    position: relative;
+
     text-align: center;
 }
 
 .icondiv {
-    position: absolute;
+
     border: 1px solid white;
     padding: 9px 10px 9px 10px;
     background-color: goldenrod;
@@ -52,7 +51,7 @@
 }
 
 @media (max-width: 768px) {
-   .picContainer{
+   .image{
     display: none;
    }
    .aboutus{
@@ -60,5 +59,23 @@
    }
    .toptext{
     width: 99%;
+   }
+   .icons{
+    width: 99%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   }
+ .icondiv{
+    width: 60px;
+ }
+   .text{
+    width: 99%;
+   }
+   .boxes{
+    flex-direction: column;
+    justify-content: center;
    }
   } 

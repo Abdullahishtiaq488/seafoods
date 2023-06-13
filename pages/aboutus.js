@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from "../styles/aboutus.module.css";
 import image1 from "../public/image-coming-soon.png";
 import { BsQuote } from 'react-icons/bs';
+import Certifications from './certifications';
 
 const AboutUs = () => {
   return (
@@ -24,23 +25,12 @@ const AboutUs = () => {
 
         <div className={styles.texts}>
           <BsQuote style={{ color: "gray", fontSize: "40px" }} />
-          <p>Greetings to all of my Board of Directors and all of my hard-working staff. After spending many years of prosperity and establishing an excellent company, today I feel privileged to send you this message. We have been working as a team for many years. Our continuous progress is the result of our consistent hard work, and our faith on ALLAH. Our faith in honesty and hard work makes us reach this point.</p>
-
-          <p>We have seen lots of changes in our company during the last few years.  These changes are positive in the sense that we achieved more and more success. We established our company as the best Basmati Rice, Himalayan Salt and Spices exporter in the World.  This is our aim from the very start to grow as a pioneer in the export. We wanted to make Super Foods Pvt Ltd the name of Quality Product.  Now, we want to set an example for our successors, that there is no short way to succeed except hard work and consistency.</p>
-
-          <p>We faced many hard times in our business. But we came out of that time due to our efforts without compromising on our quality. We are providing best quality Product at affordable prices since 1996. We are now proudly introducing our company. We are in export business, with the help of rice importers, rice brokers and rice promotions institutions and hypermarkets.</p>
-
-          <p>Things we didn’t change till now from the very first day are:</p>
-
-          <p>Our commitment to provide best quality Products.</p>
-
-          <p>Focus on client’s demands</p>
-
-          <p>No compromise on quality</p>
-
-          <p>Priority is transparency and honesty in dealing with client</p>
-
-          <p>I am proud of all of my team and hopeful we will continue doing great work as a team.</p>
+          <p>Pakistan has long been known for its rich agricultural heritage, and our aim is to showcase the exceptional quality and taste of Pakistani rice to the world. We firmly believe that our country's rice holds immense potential and deserves recognition on a global scale.
+To achieve this vision, we are investing in creating state-of-the-art rice fields that embody excellence in every aspect. Our dedicated team of farmers, supported by cutting-edge agricultural technologies, is working diligently to cultivate rice crops that are unmatched in quality, flavor, and nutritional value.
+We are proud to be a part of Pakistan's agricultural legacy, and we are committed to upholding sustainable farming practices that respect our environment and ensure the longevity of our rice fields. By promoting responsible water management, soil conservation, and biodiversity preservation, we are playing our part in building a sustainable future for the generations to come.
+But our ambitions extend beyond our borders. We aspire to make Pakistani rice a symbol of culinary delight worldwide. 
+</p><p>Through strategic partnerships, meticulous quality control, and a focus on customer satisfaction, we are dedicated to bringing the finest Pakistani rice to every corner of the globe
+</p>
         </div>
 
       </div>
@@ -82,11 +72,56 @@ const AboutUs = () => {
         </div>
 
       </div>
+      <div className={styles.section}>
 
       <div style={{marginTop:"60px"}} className={styles.heading}>
-        <h1>Our Mission</h1>
-        <p>Well understand the customer’s requirements and truly implement them</p>
-        <hr style={{ marginLeft: "20%", marginRight: "20%", marginTop: "15px" }} />
+        <h1 style={{color:"black"}}>Our Mission</h1>
+        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+        <div className={styles.textsA}>
+        <BsQuote style={{ color: "gray", fontSize: "40px" }} />
+        <p>As one of the best Pakistani Leading Basmati companies providing the best quality 
+          products and creating joyful moments. Being the best partner through innovations and unprecedented
+           business growth. Providing better returns by executing excellence and best-in-class corporate governance</p>
+           </div>
+      </div>
+      </div>
+
+<div className={styles.section}>
+      <div style={{marginTop:"60px"}} className={styles.heading}>
+        <h1 style={{color:"black"}}>Our Vision</h1>
+        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+        <div className={styles.textsA}>
+        <BsQuote style={{ color: "gray", fontSize: "40px" }} />
+        <p>To preserve and enrich the legacy of Basmati in Pakistan by ensuring the genetic integrity of the seed.
+           We encourage farmers to adopt scientific agricultural practices and world-class rice processing technologies
+            to emerge as the industry 
+          benchmark for product quality and customer service ensuring our presence in every Pakistan Household</p>
+          </div>
+      </div>
+      </div>
+
+      <div className={styles.section}>
+      <div style={{marginTop:"60px"}} className={styles.heading}>
+        <h1 style={{color:"black"}} >Our Value</h1>
+        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+        <div className={styles.textsA}>
+        <BsQuote style={{ color: "gray", fontSize: "40px" }} />
+        <p>We value quality – which satisfies food lovers all across Pakistan. Our endeavor is to maintain
+           the such quality that is evident in the aroma and taste of every rice grain that we offer. We value Innovation
+            – to satisfy the needs of consumers with pioneering ideas in taste and variety.
+           We value our consumer’s CHOICE – by delivering what the consumer wants and expect from us.</p>
+          </div>
+      </div>
+      </div>
+      <div className={styles.section}>
+      <div style={{marginTop:"60px"}} className={styles.heading}>
+        <h1 style={{color:"black"}} >Our Certificates</h1>
+        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+        <div>
+          <Certifications />
+     
+          </div>
+      </div>
       </div>
 
 

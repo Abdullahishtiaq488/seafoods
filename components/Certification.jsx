@@ -13,7 +13,7 @@ const Certification = () => {
 
 <div className={styles.heading}>
         <h1>Our Membership</h1>
-        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+        
       </div>
       
 

@@ -14,11 +14,7 @@ const Certifications = () => {
     return (
         <section className={styles.certifications}>
             
-            <div className={styles.heading}>
-        <h1>Our Certifications</h1>
-        <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
-      </div>
-
+           
             <div className={styles.certificates}>
                 <div className={styles.flexContainer}>
 

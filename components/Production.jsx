@@ -7,6 +7,7 @@ const Production = () => {
     <section className="production">
       <div className={styles.production}>
       <div className={styles.toptext}>
+        <p style={{color:"red", marginBottom:"10px"}}>PRODUCTION</p>
         <h2>Super Foods Pvt. Ltd. entered in business in 1996 </h2><br/>
         <p>
           With quality and efficiency, we have achieved a huge clientele all over the globe. Super Food’s network has expanded to almost 100+ cities officially. Whereas we are still exploring and willing to expand more.

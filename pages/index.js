@@ -25,7 +25,7 @@ const Home = ({ products, bannerData }) => (
       <Membership />
     </div>
 
-    <div className='products-container'>
+    <div>
       <AboutUs />
     </div>
 
@@ -36,7 +36,7 @@ const Home = ({ products, bannerData }) => (
       <Certification />
     </div>
 
-    <div className='products-container'>
+    <div>
       <Production />
     </div>
     
