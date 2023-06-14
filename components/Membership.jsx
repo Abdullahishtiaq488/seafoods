@@ -10,7 +10,7 @@ import Image from 'next/image';
 const Membership = () => {
   return (
  <section className={styles.certifications}><div className={styles.heading}>
- <h1>Our Certifications</h1>
+ <h1>Certifications</h1>
 </div> 
 
     <div className={styles.flexContainer}>
