@@ -2,6 +2,10 @@
     color: white;
 }
 
+.aboutus p{
+    margin-top: 15px;
+}
+
 .aboutus {
     
     display: flex;
@@ -16,7 +20,8 @@
 
 .toptext {
     width: 66%;
-    padding: 40px;
+    height: 580px;
+    padding: 30px;
     background: linear-gradient(rgba(255, 0, 0, 0.919),rgba(255, 0, 0, 0.919));
     
 }
@@ -59,6 +64,7 @@
    }
    .toptext{
     width: 99%;
+    height: auto;
    }
    .icons{
     width: 99%;
