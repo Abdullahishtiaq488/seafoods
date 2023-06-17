@@ -38,17 +38,10 @@
   }
 
 
-  /* @media (max-width: 768px) {
-    .flexContainer {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .images{
-        width: 90%;
-    }
+  @media (max-width: 768px) {
+    
     .heading h1{
-      font-size: 35px;
+      font-size: 30px;
    }
-  } */
+  }
   

@@ -35,6 +35,21 @@ export default {
       name: 'details',
       title: 'Details',
       type: 'string',
-    }
+    },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Salt', value: 'salt' },
+          { title: 'Rice', value: 'rice' },
+          { title: 'Spice', value: 'spice' },
+          { title: 'Juice', value: 'juice' },
+          
+          // Add more categories as needed
+        ],
+      },
+    },
   ]
 }

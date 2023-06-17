@@ -204,7 +204,7 @@ width: 100%;
 }
 
 .video-container {
-  padding: 100px 10px;
+  
   height: 570px;
   line-height: 0.9; 
   max-width: 99%;
@@ -219,12 +219,13 @@ width: 100%;
 
 .video-element {
   width: 60%;
-  height: 450px;
+  height: 580px;
   
   
 }
 
 .video-text {
+  padding: 100px 10px;
   width: 40%;
   line-height: 60px;
   height: auto;

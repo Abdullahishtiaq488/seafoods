@@ -8,10 +8,10 @@ const ContactUs = () => {
   return (
     <section className={styles.contactus}>
 
-      <div className={styles.heading}>
-        <h1>Send us an Email, Now!</h1>
-        <hr style={{ marginLeft: "25%", marginRight: "25%", marginTop: "15px" }} />
-      </div>
+<div className="products-heading">
+      <h2>Contact Us</h2>
+      <p>Send us an Email, Now!</p>
+    </div>
 
       <div className={styles.section}>
         

@@ -31,10 +31,14 @@ const Home = ({ products, bannerData }) => (
 
     
 
-    <div>
-      {/* {products?.map((product) => <Product key={product._id} product={product} />)} */}
+    <div className='product-container'>
+      {/* <div className='product'>
+      {products?.map((product) => <Product key={product._id} product={product} />)}
+      </div> */}
       <Certification />
+      
     </div>
+    
 
     <div>
       <Production />

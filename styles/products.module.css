@@ -1,57 +1,22 @@
 .products {
   padding: 20px;
   height: auto;
+  
 }
 
-.heading {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: gray;
-  font-weight: bolder;
+
+
+.titles{
+  padding-left: 30px;
+  margin-bottom: 30px;
 }
 
-.heading h1 {
-  font-size: 50px;
-}
 
-.productlist {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: auto;
-}
 
-.product {
-  border: 2px solid black;
-  width: 400px;
-  height: auto;
-  margin: 10px;
-  padding: 10px;
-  animation: zoomIn 2s ease-in-out;
-  transition: transform 0.8s ease-in-out; /* Added transition for smooth hover effect */
-}
 
-.product:hover {
-  transform: scale(1.08); /* Increased size when hovered */
-}
 
-.product .content {
-  margin-top: 15px;
-}
 
-@keyframes zoomIn {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 
 @media (max-width: 768px) {
-  .heading h1 {
-    font-size: 40px;
-  }
+  
 }
