@@ -11,6 +11,7 @@ import { Production } from '../components';
 
 
 const Home = ({ products, bannerData }) => (
+
   <div>
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
@@ -39,15 +40,9 @@ const Home = ({ products, bannerData }) => (
       
     </div>
     
-
-    <div>
       <Production />
-    </div>
+  
     
-
-    <div>
-
-    </div>
 
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>

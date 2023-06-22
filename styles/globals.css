@@ -7,8 +7,24 @@ body, * {
   box-sizing: border-box;
 
 }
+body {
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  overflow-y: scroll;
+  scroll-padding-bottom: 1px;
+}
+
+
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.app__bg {
+  background: url('../public/white2.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -644,7 +660,7 @@ text-align: end;
   background-color: rgba(34,34,34,255);
   height: auto;
   text-align: center;
-  margin-top: 20px;
+  
   padding: 30px 10px;
   
   display: flex;

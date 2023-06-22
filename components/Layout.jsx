@@ -4,9 +4,16 @@ import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+
+
+
 const Layout = ({ children }) => {
+
+  
+
   return (
-    <div className="layout">
+    
+    <div className="layout app__bg">
       <Head>
         <title>Super Foods Pvt Ltd.</title>
       </Head>
