@@ -504,6 +504,15 @@ row-gap: 20px;
   height: auto;
 }
 
+.Truck-Section {
+  background:  url("../public/truck-section.jpg");
+  height: 1150px;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
 
 .image2{
 

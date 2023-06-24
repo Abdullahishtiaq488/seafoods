@@ -8,4 +8,5 @@ export { default as Certification } from './Certification';
 export { default as Membership } from './Membership';
 export { default as AboutUs } from './AboutUs';
 export { default as Production } from './Production';
+export { default as Truck } from './Truck';
 export { default as Cart } from './Cart';

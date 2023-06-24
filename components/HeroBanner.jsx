@@ -24,7 +24,10 @@ const HeroBanner = ({ heroBanner }) => {
 
 
   return (
-    <Carousel onChange={handleSlideChange} showThumbs={false} showStatus={false} autoPlay={false} infiniteLoop={true}>
+    <Carousel autoPlay={true}
+      onChange={handleSlideChange}
+      interval={4000} transitionTime={1400}  showThumbs={false} showStatus={false} infiniteLoop={true}>
+        
       <div className="hero-banner-container">
         <div className='texta'>
           <p className="beats-solo">{heroBanner.smallText}</p>
@@ -104,22 +107,6 @@ const HeroBanner = ({ heroBanner }) => {
         </div>
 
       </div>
-      
-      <div className="video-container">
-      <div className='video-text'>
-
-        <p style={{color:"#a6252a",fontWeight:"bold"}}>WE PRODUCE</p>
-          <h1 className={activeSlide === 3 ? 'animate' : ''}>One of the Best Spices</h1>
-          <h4 className={activeSlide === 3 ? 'fanimate' : ''}>In the entire world</h4>
-          <p>Order Now!</p>
-        </div>
-        <video autoPlay loop className="video-element" muted playsInline>
-          <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-      </div>
-      
 
 
     </Carousel>

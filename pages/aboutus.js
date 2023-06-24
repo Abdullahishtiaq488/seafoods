@@ -1,5 +1,7 @@
 // pages/aboutus.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 import styles from "../styles/aboutus.module.css";
 import image1 from "../public/image-coming-soon.png";
@@ -7,6 +9,10 @@ import { BsQuote } from 'react-icons/bs';
 import Certifications from './certifications';
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className={styles.aboutus}>
        <div className="products-heading">
@@ -48,7 +54,7 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
 
 
       
-      <div className={styles.section}>
+      <div data-aos="fade-up" data-aos-duration="1500"   className={styles.section}>
       <div className='products-heading'>
         <h2 >Our Mission</h2>
         <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
@@ -66,7 +72,7 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
       </div>
       </div>
 
-<div className={styles.section}>
+<div data-aos="fade-up" data-aos-duration="1500"   className={styles.section}>
 <div className='products-heading'>
         <h2 >Our Vision</h2>
         <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
@@ -85,7 +91,7 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
       </div>
       </div>
 
-      <div className={styles.section}>
+      <div data-aos="fade-up" data-aos-duration="1500"   className={styles.section}>
         <div className='products-heading'>
         <h2 >Our Value</h2>
         <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
@@ -102,7 +108,7 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
           </div>
       </div>
       </div>
-      <div className={styles.section}>
+      <div data-aos="fade-up" data-aos-duration="1500" className={styles.section}>
       
           <Certifications />
      

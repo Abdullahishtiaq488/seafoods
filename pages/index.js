@@ -2,7 +2,7 @@ import React from 'react';
 
 import { client } from '../lib/client';
 import Image from 'next/image';
-import { Product, FooterBanner, HeroBanner } from '../components';
+import { Product, FooterBanner, HeroBanner, Truck } from '../components';
 import { Certification } from '../components';
 import { AboutUs } from '../components';
 import { Membership } from '../components';
@@ -32,7 +32,7 @@ const Home = ({ products, bannerData }) => (
 
     
 
-    <div className='product-container'>
+    <div>
       {/* <div className='product'>
       {products?.map((product) => <Product key={product._id} product={product} />)}
       </div> */}
@@ -42,7 +42,9 @@ const Home = ({ products, bannerData }) => (
     
       <Production />
   
-    
+    <div>
+      <Truck />
+    </div>
 
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>
