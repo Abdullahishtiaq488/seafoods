@@ -36,6 +36,7 @@ const Products = ({ products }) => {
           <Product key={product._id} product={product} />
         ))}
       </div>
+      
       </div>
 
       <div className={styles.titles}>

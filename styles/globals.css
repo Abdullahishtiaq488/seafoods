@@ -220,6 +220,7 @@ width: 100%;
 }
 
 .video-container {
+  background-color: white;
   
   height: 570px;
   line-height: 0.9; 
@@ -746,6 +747,10 @@ padding: 20px 10px;
   display: flex;
  gap: 30px;
   padding: 20px;
+  flex-direction: space-evenly;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .product .cart-product-image{
   width:180px ;
