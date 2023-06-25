@@ -736,8 +736,8 @@ padding: 20px 10px;
   flex-wrap: wrap;
 }
 .product .cart-product-image{
-  width:180px ;
-  height: 150px;
+  width:120px ;
+  height: 120px;
     border-radius: 15px;
  background-color: #ebebeb;
 }
@@ -749,7 +749,7 @@ padding: 20px 10px;
 
 }
 .item-desc .bottom{
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .flex h5{
   font-size: 24px;
@@ -782,7 +782,9 @@ padding: 30px 65px;
 }
 
 .btn-container{
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
   margin: auto;
 }
 .btn{
