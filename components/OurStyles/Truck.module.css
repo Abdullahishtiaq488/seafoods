@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 3%;
     left: -1000px; /* Initial position off-screen to the left */
-    animation: moveTruck 9s linear infinite;
+    animation: moveTruck 14s linear infinite;
   }
   
   .imageWrapper {

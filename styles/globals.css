@@ -219,90 +219,6 @@ width: 100%;
   color: white;
 }
 
-.video-container {
-  background-color: white;
-  
-  height: 570px;
-  line-height: 0.9; 
-  max-width: 99%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  
-  box-shadow: 5px 20px 10px rgba(0, 0, 0, 0.2);;
-}
-
-.video-element {
-  width: 60%;
-  height: 580px;
-  
-  
-}
-
-.video-text {
-  padding: 100px 10px;
-  width: 40%;
-  line-height: 60px;
-  height: auto;
-  margin-top: 20px;
-}
-
-.video-text h1{
-  font-size: 38px;
-  text-transform: uppercase;
-}
-
-.animate{
-  animation: flyInFromRight 1.5s ease-out backwards;
-}
-
-
-
-@keyframes flyInFromRight {
-
-  0% {
-    transform: translateX(70%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-}
-
-
-
-.video-text h4{
-  font-size: 28px;
-  border: 1px solid black;
-  border-radius: 30px 0px 30px 0px;
-  background-color: #a6252a;
-  color: #dcdcdc;
-  margin: 30px;
-}
-
-.fanimate{
-  animation: flyInFromLeft 1.5s ease-out forwards;
-}
-
-
-
-@keyframes flyInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-
 
 
                                                     /* TEXT A */
@@ -312,7 +228,10 @@ width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  animation: fadeIn 3s ease-in-out;
+}
+
+.text-animation{
+  animation: fadeIn 5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -427,13 +346,16 @@ row-gap: 20px;
  top: 230px;
   width: 250px;
   height: 270px;
-
-  transition: transform 2s ease-in-out; 
 }
 
-.hero-banner-image:hover{
-  transform: scale(1.28);
-}
+.hero-banner-images{
+  position: absolute;
+  right: 10%;
+  top: 230px;
+   width: 250px;
+   height: 270px;
+ }
+
 
 .hero-banner-image2{
   position: absolute;
@@ -441,13 +363,20 @@ row-gap: 20px;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
-   transition: transform 2s ease-in-out; 
  }
 
- .hero-banner-image2:hover{
-  transform: scale(1.28);
-  
+ .hero-banner-images2{
+  position: absolute;
+  right: 20%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
  }
+
+
+
+
+
 
  .hero-banner-image3{
   position: absolute;
@@ -455,24 +384,54 @@ row-gap: 20px;
   top: 230px;
    max-width: 250px;
    max-height: 270px;
-   transition: transform 2s ease-in-out ; 
  }
 
- .hero-banner-image3:hover{
-  transform: scale(1.28);
-  
+ .hero-banner-images3{
+  position: absolute;
+  right: 30%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
  }
 
- .hero-banner-image, .hero-banner-image2, .hero-banner-image3 {
+ .hero-banner-image4{
+  position: absolute;
+  right: 40%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
+ }
+
+ .hero-banner-images4{
+  position: absolute;
+  right: 40%;
+  top: 230px;
+   max-width: 250px;
+   max-height: 270px;
+ }
+ 
+
+ .hero-banner-image, .hero-banner-image2, .hero-banner-image3, .hero-banner-image4 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 250px;
   height: 270px;
   opacity: 0;
-  animation: flyInFromLeft 3s ease-out forwards;
 }
 
+.hero-banner-images, .hero-banner-images2, .hero-banner-images3, .hero-banner-images4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 270px;
+  opacity: 0;
+}
+
+.animation{
+  animation: flyInFromLeft 3s ease-out forwards;
+}
 
 
 @keyframes flyInFromLeft {
@@ -492,10 +451,25 @@ row-gap: 20px;
   animation-delay: 0.5s;
 }
 
+.hero-banner-images2 {
+  animation-delay: 0.7s;
+}
+
 .hero-banner-image3 {
   animation-delay: 1s;
 }
 
+.hero-banner-images3 {
+  animation-delay: 1.4s;
+}
+
+.hero-banner-image4 {
+  animation-delay: 1.5s;
+}
+
+.hero-banner-images4 {
+  animation-delay: 2.1s;
+}
 
 .production {
   background: linear-gradient(rgba(0,0,0,0.681),rgba(0, 0, 0, 0.681)), url("../public/fields.jpg");
@@ -1203,19 +1177,44 @@ margin-top: 160px;
     top: 65%;
     right: 10%;
   }
+  .hero-banner-images{
+    max-width: 50px;
+    max-height: 70px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
   .hero-banner-image2{
     max-width: 50px;
     max-height: 70px;
     top: 65%;
+  }
+  .hero-banner-images2{
+    max-width: 50px;
+    max-height: 70px;
+    top: 25%;
+    right: 15%;
   }
   .hero-banner-image3{
     max-width: 50px;
     max-height: 70px;
     top: 65%;
   }
+  .hero-banner-images3{
+    max-width: 50px;
+    max-height: 70px;
+    top: 25%;
+    right: 25%;
+  }
+  .hero-banner-images4{
+    max-width: 50px;
+    max-height: 70px;
+    top: 25%;
+    right: 35%;
+  }
 
   .hero-banner-container .texta{
-    padding-top: 30%;
+    padding-top: 40%;
   }
   .hero-banner-container button{
     margin-top: 1px;
