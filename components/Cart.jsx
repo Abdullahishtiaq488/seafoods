@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping, AiFillCreditCard } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
+import { FaMoneyBillAlt } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 
 import { useStateContext } from '../context/StateContext';
@@ -99,10 +100,10 @@ const Cart = () => {
             </div>
             <div className="btn-container">
               <button type="button" className="btn" onClick={handleCheckout}>
-                Pay with Card
+                Pay with Card <AiFillCreditCard  style={{color:"white",paddingTop:"2px"}}/>
               </button>
               <button type="button" className="btn">
-                Pay with COD
+                Pay with COD <FaMoneyBillAlt style={{color:"white",paddingTop:"2px"}}/>
               </button>
             </div>
           </div>

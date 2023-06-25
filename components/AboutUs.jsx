@@ -1,10 +1,18 @@
-import React from 'react';
+
 import styles from '../components/OurStyles/AboutUs.module.css';
 import Image from 'next/image';
 import tank from '../public/tank.png';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { BsBullseye, BsClockFill, BsFillHandThumbsUpFill, BsHandThumbsUp, BsHandThumbsUpFill } from 'react-icons/bs';
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init();
+    
+  }, []);
+
   return (
     <section >
       <div className={styles.aboutus}>
@@ -15,14 +23,15 @@ const AboutUs = () => {
          </div>
         
         <div className={styles.toptext}>
-
+<div data-aos="fade-in" data-aos-duration="1700" data-aos-delay="200">
           <h2>Why Choose us</h2><br />
           <p>Super Foods Pvt. Ltd. has started in 1996.
             We have formulated our thoughts with the passage of time.
             Gain expertise in fulfillment of market demands, created huge man force to meet customers
             requirements and quality of our products</p>
+            </div>
 
-          <div className={styles.main}>
+          <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="300" className={styles.main}>
 
             <div className={styles.boxes}>
               <div className={styles.icons}>
@@ -30,14 +39,14 @@ const AboutUs = () => {
               </div>
 
 
-              <div className={styles.text}>
+              <div  className={styles.text}>
                 <h2> SUPERIOR QUALITY</h2>
                 <p>With a positive mindset and huge manpower, we can maintain quality with efficiency & perfection.
                   Our quality control department is well equipped with the latest technology to provide extra vigilant
                   quality assurance services to our customers.</p></div>
             </div></div>
 
-          <div className={styles.main}>
+          <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="600" className={styles.main}>
 
             <div className={styles.boxes}>
               <div className={styles.icons}><div className={styles.icondiv}><BsClockFill style={{ color: "white", fontSize: "30px" }} /></div></div>
@@ -50,7 +59,7 @@ const AboutUs = () => {
                   We have in house team to make sure all deliveries are made at right time to the right place.</p></div></div>
           </div>
 
-          <div className={styles.main}>
+          <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="900" className={styles.main}>
 
             <div className={styles.boxes}>
               <div className={styles.icons}><div className={styles.icondiv}><BsBullseye style={{ color: "white", fontSize: "30px" }} /></div></div>
