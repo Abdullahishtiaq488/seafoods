@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { RiCoupon3Line, RiExchangeDollarLine, RiSecurePaymentLine} from 'react-icons/ri';
 import {PiPackage, VscPackage} from "react-icons/vsc";
 import styles from '../components/OurStyles/Features.module.css';
 import { FaMapMarker, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Features = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
   return (
     <section className={styles.Features}>
         <div className={styles.Featurescontainer}>
             <div className={styles.containeritems}>
-                <div className={styles.icons}>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
                     <RiExchangeDollarLine style={{fontSize:"90px"}} />
 
                 </div>
@@ -17,7 +22,7 @@ const Features = () => {
             </div>
 
             <div className={styles.containeritems}>
-            <div className={styles.icons}>
+            <div data-aos="zoom-in-down"  data-aos-duration="1500"className={styles.icons}>
             <RiCoupon3Line style={{fontSize:"90px"}}  />
             
 
@@ -26,7 +31,7 @@ const Features = () => {
             </div>
 
             <div className={styles.containeritems}>
-            <div className={styles.icons}>
+            <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
             
 <RiSecurePaymentLine style={{fontSize:"90px"}}  />
 </div>
@@ -34,7 +39,7 @@ const Features = () => {
             </div>
 
             <div className={styles.containeritems}>
-            <div className={styles.icons}>
+            <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
             
 <FaMapMarkerAlt style={{fontSize:"90px"}} />
 </div>

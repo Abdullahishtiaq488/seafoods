@@ -4,7 +4,7 @@ const TopBelt = () => {
   return (
     <section className='TopBelt'>
 
-        <h4> 50% OFF limited time offer! Discover Now! </h4>
+        <h5> 50% OFF limited time offer! Discover Now! </h5>
 
     </section>
   )
