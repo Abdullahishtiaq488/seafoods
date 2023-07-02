@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-
+import TopBelt from './TopBelt';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
         <title>Super Foods Pvt Ltd.</title>
       </Head>
       <header>
+      <TopBelt />
         <Navbar />
       </header>
       <main className="main-container">

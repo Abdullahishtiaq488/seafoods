@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.Features{
+    width: 100%;
+    padding: 0px;
+    padding-top: 120px;
+}
+
+
+
+.Featurescontainer{
+
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containeritems{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containeritems h4{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 18px;
+
+  
+}
+
+.containeritems .icons{
+    background-color: rgba(219, 217, 217, 0.555);
+    color: black;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+@media (max-width: 768px) {
+    
+    .Featurescontainer{
+        flex-direction: column;
+    }
+  }

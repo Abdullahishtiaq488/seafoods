@@ -5,7 +5,7 @@ import tank from '../public/tank.png';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { BsBullseye, BsClockFill, BsFillHandThumbsUpFill, BsHandThumbsUp, BsHandThumbsUpFill } from 'react-icons/bs';
+import { BsCheck2Circle} from 'react-icons/bs';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -15,12 +15,8 @@ const AboutUs = () => {
 
   return (
     <section >
-      <div className={styles.aboutus}>
-        <div className={styles.image}>
-          <Image 
+      <div className="AboutUs">
         
-         src={tank} alt='tank' />
-         </div>
         
         <div className={styles.toptext}>
 <div data-aos="fade-in" data-aos-duration="1700" data-aos-delay="200">
@@ -29,13 +25,13 @@ const AboutUs = () => {
             We have formulated our thoughts with the passage of time.
             Gain expertise in fulfillment of market demands, created huge man force to meet customers
             requirements and quality of our products</p>
-            </div>
+            </div><br />
 
           <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="300" className={styles.main}>
 
             <div className={styles.boxes}>
               <div className={styles.icons}>
-                <div className={styles.icondiv}><BsHandThumbsUpFill style={{ color: "white", fontSize: "30px" }} /> </div>
+                <BsCheck2Circle style={{ color: "white", fontSize: "60px" }} />
               </div>
 
 
@@ -49,7 +45,7 @@ const AboutUs = () => {
           <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="600" className={styles.main}>
 
             <div className={styles.boxes}>
-              <div className={styles.icons}><div className={styles.icondiv}><BsClockFill style={{ color: "white", fontSize: "30px" }} /></div></div>
+              <div className={styles.icons}><BsCheck2Circle style={{ color: "white", fontSize: "60px" }} /></div>
 
 
               <div className={styles.text} >
@@ -62,7 +58,8 @@ const AboutUs = () => {
           <div data-aos="fade-left" data-aos-duration="6700" data-aos-delay="900" className={styles.main}>
 
             <div className={styles.boxes}>
-              <div className={styles.icons}><div className={styles.icondiv}><BsBullseye style={{ color: "white", fontSize: "30px" }} /></div></div>
+              <div className={styles.icons}>
+                <BsCheck2Circle style={{ color: "white", fontSize: "60px" }} /></div>
 
 
               <div className={styles.text}>

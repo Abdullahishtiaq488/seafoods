@@ -16,18 +16,7 @@ const Products = ({ products }) => {
       <p>Here are some of our best products</p>
     </div>
 
-
-
-<div className={styles.titles}>
-  <h2>Salt</h2>
-
-      <div className='product'>
-        {getCategoryProducts('salt').map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
-      </div>
-      <div className={styles.titles}>
+    <div className={styles.titles}>
   <h2>Rice</h2>
 
 
@@ -38,6 +27,17 @@ const Products = ({ products }) => {
       </div>
       
       </div>
+
+<div className={styles.titles}>
+  <h2>Salt</h2>
+
+      <div className='product'>
+        {getCategoryProducts('salt').map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+      </div>
+      
 
       <div className={styles.titles}>
   <h2>Juice</h2>

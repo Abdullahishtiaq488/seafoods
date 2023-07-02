@@ -2,7 +2,7 @@ import React from 'react';
 
 import { client } from '../lib/client';
 import Image from 'next/image';
-import { Product, FooterBanner, HeroBanner, Truck } from '../components';
+import { Product, FooterBanner, HeroBanner, Truck, Features } from '../components';
 import { Certification } from '../components';
 import { AboutUs } from '../components';
 import { Membership } from '../components';
@@ -13,7 +13,9 @@ import { Production } from '../components';
 const Home = ({ products, bannerData }) => (
 
   <div>
+   
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+    <Features />
 
     {/* <div className="products-heading">
       <h2>Best Seller Products</h2>

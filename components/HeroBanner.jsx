@@ -62,8 +62,9 @@ const HeroBanner = ({ heroBanner }) => {
       <div className='image2'>
         <div className={`texta2 ${shouldAnimate2 ? 'text-animation' : ''}`}>
           <p className="beats-solo">{heroBanner.smallText}</p>
-          <h3>{heroBanner.midText}</h3>
+          
           <h1>{heroBanner.largeText1}</h1>
+          <h3 >{heroBanner.midText}</h3>
 
 
           <div className={`hero-banner-image ${shouldAnimate2 ? 'animation' : ''}`}>
@@ -80,10 +81,7 @@ const HeroBanner = ({ heroBanner }) => {
             <Link href={`/product/${heroBanner.product}`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
-            <div className="desc">
-              <h5 className='colors'>Description</h5>
-              <p>{heroBanner.desc}</p>
-            </div>
+            
           </div>
         </div>
 
@@ -92,12 +90,13 @@ const HeroBanner = ({ heroBanner }) => {
       <div className='image3'>
 
       <div className={`texta3 ${shouldAnimate3 ? 'text-animation' : ''}`}>
-          <p className="beats-solo">{heroBanner.smallText}</p>
-          <h3>{heroBanner.midText}</h3>
-          <h1>{heroBanner.largeText1}</h1>
-
-
-          <div className={`hero-banner-image ${shouldAnimate3 ? 'animation' : ''}`}>
+          
+          <h1>New</h1>
+          <h3>Himalayan Salt</h3>
+          <p className="beats-solo">Discount Up to 30% OFF </p>
+          
+<br />
+          {/* <div className={`hero-banner-image ${shouldAnimate3 ? 'animation' : ''}`}>
             <Image src={bag1} layout="fill" objectFit="cover" alt="headphones" />
           </div>
           <div className={`hero-banner-image2 ${shouldAnimate3 ? 'animation' : ''}`}>
@@ -105,16 +104,16 @@ const HeroBanner = ({ heroBanner }) => {
           </div>
           <div className={`hero-banner-image3 ${shouldAnimate3 ? 'animation' : ''}`}>
             <Image src={bag3} layout="fill" objectFit="cover" alt="rice" />
-          </div>
+          </div> */}
 
           <div>
             <Link href={`/product/${heroBanner.product}`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
-            <div className="desc">
+            {/* <div className="desc">
               <h5 className='colors'>Description</h5>
               <p>{heroBanner.desc}</p>
-            </div>
+            </div> */}
           </div>
         </div>
 

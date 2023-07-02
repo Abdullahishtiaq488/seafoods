@@ -42,6 +42,50 @@
     width: 50%;
 }
 
+.Agreementbanner{
+    background:black;
+    width: 100%;
+    height: auto;
+    
+    padding: 40px 0 40px 0px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+ 
+}
+
+.challanges h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+  }
+
+ 
+  
+  .challanges h1:before,
+  .challanges h1:after {
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1.4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }
+  
+  .challanges h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .challanges h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
 
 .texts{
     width: 50%;
@@ -56,7 +100,7 @@
     border: 2px solid black;
     padding: 20px;
     margin: 15px;
-    background-color:firebrick;
+    background-color: darkred;
     color: white;
     display: flex;
     flex-direction: row;

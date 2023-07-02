@@ -1,30 +1,35 @@
-.aboutus h2{
+.aboutus h2 {
     color: white;
 }
 
-.aboutus p{
+.aboutus p {
     margin-top: 15px;
 }
 
 .aboutus {
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    
-    
+    color: white;
+
+
 }
 
 
 
 .toptext {
-    width: 66%;
-    height: 580px;
-    padding: 30px;
-    background: linear-gradient(rgba(255, 0, 0, 0.919),rgba(255, 0, 0, 0.919));
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    padding: 170px;
+
+
 }
 
 
@@ -38,51 +43,61 @@
 .icons {
     width: 11%;
     padding: 10px;
-
-    text-align: center;
-}
-
-.icondiv {
-
-    border: 1px solid white;
-    padding: 9px 10px 9px 10px;
-    background-color: goldenrod;
     border-radius: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
     width: 79%;
-    
+
 }
 
 @media (max-width: 768px) {
-   .image{
-    display: none;
-   }
-   .aboutus{
-    text-align: center;
-   }
-   .toptext{
-    width: 99%;
-    height: auto;
-   }
-   .icons{
-    width: 99%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-   }
- .icondiv{
-    width: 60px;
- }
-   .text{
-    width: 99%;
-   }
-   .boxes{
-    flex-direction: column;
-    justify-content: center;
-   }
-  } 
+    .image {
+        display: none;
+    }
+
+    .aboutus {
+        text-align: center;
+    }
+
+    .toptext {
+        width: 99%;
+        height: auto;
+        padding: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .toptext h2 {
+        font-size: 16px;
+    }
+
+    .toptext p {
+        font-size: 10px;
+    }
+
+    .icons {
+        width: 99%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .text {
+        width: 99%;
+    }
+
+    .boxes {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

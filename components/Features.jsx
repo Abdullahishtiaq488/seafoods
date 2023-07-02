@@ -1,0 +1,50 @@
+import React from 'react';
+import { RiCoupon3Line, RiExchangeDollarLine, RiSecurePaymentLine} from 'react-icons/ri';
+import {PiPackage, VscPackage} from "react-icons/vsc";
+import styles from '../components/OurStyles/Features.module.css';
+import { FaMapMarker, FaMapMarkerAlt } from 'react-icons/fa';
+
+const Features = () => {
+  return (
+    <section className={styles.Features}>
+        <div className={styles.Featurescontainer}>
+            <div className={styles.containeritems}>
+                <div className={styles.icons}>
+                    <RiExchangeDollarLine style={{fontSize:"90px"}} />
+
+                </div>
+                <h4>7 Day Exchange <br /> Policy </h4>
+            </div>
+
+            <div className={styles.containeritems}>
+            <div className={styles.icons}>
+            <RiCoupon3Line style={{fontSize:"90px"}}  />
+            
+
+</div>
+                <h4>Weekend Discount<br /> Coupon </h4>
+            </div>
+
+            <div className={styles.containeritems}>
+            <div className={styles.icons}>
+            
+<RiSecurePaymentLine style={{fontSize:"90px"}}  />
+</div>
+                <h4>Secure Payment<br /> methods </h4>
+            </div>
+
+            <div className={styles.containeritems}>
+            <div className={styles.icons}>
+            
+<FaMapMarkerAlt style={{fontSize:"90px"}} />
+</div>
+                <h4>Track Your<br /> Package </h4>
+            </div>
+
+        </div>
+
+    </section>
+  )
+}
+
+export default Features
