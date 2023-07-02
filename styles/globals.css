@@ -413,7 +413,7 @@ span.text-red {
 
 
  .hero-banner-image {
-  position: relative;
+  position: absolute;
   right: 10%;
   top: 400px;
   width: 150px;
@@ -421,7 +421,7 @@ span.text-red {
 }
 
 .hero-banner-images {
-  position: relative;
+  position: absolute;
   right: 10%;
   top: 230px;
   width: 250px;
@@ -430,7 +430,7 @@ span.text-red {
 
 
 .hero-banner-image2 {
-  position: relative;
+  position: absolute;
   right: 20%;
   top: 370px;
   width: 150px;
@@ -438,7 +438,7 @@ span.text-red {
 }
 
 .hero-banner-images2 {
-  position: relative;
+  position: absolute;
   right: 20%;
   top: 230px;
   max-width: 250px;
@@ -447,7 +447,7 @@ span.text-red {
 
 
 .hero-banner-image3 {
-  position: relative;
+  position: absolute;
   right: 30%;
   top: 400px;
   width: 150px;
@@ -455,7 +455,7 @@ span.text-red {
 }
 
 .hero-banner-images3 {
-  position: relative;
+  position: absolute;
   right: 30%;
   top: 230px;
   max-width: 250px;
@@ -463,7 +463,7 @@ span.text-red {
 }
 
 .hero-banner-image4 {
-  position: relative;
+  position: absolute;
   right: 40%;
   top: 230px;
   max-width: 250px;
@@ -471,7 +471,7 @@ span.text-red {
 }
 
 .hero-banner-images4 {
-  position: relative;
+  position: absolute;
   right: 40%;
   top: 230px;
   max-width: 250px;
