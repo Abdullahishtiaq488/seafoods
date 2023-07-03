@@ -13,7 +13,15 @@ const Layout = ({ children }) => {
 
   return (
     
-    <div className="layout app__bg">
+    <div style={{
+      background: `url('/bgimages/blue3.jpeg')`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'repeat',
+      backgroundAttachment: 'fixed',
+    }}
+    
+    className="layout">
       <Head>
         <title>Super Foods Pvt Ltd.</title>
       </Head>

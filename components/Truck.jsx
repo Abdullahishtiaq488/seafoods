@@ -6,7 +6,12 @@ import Image from 'next/image';
 
 const Truck = () => {
   return (
-    <section className="Truck-Section">
+    <section style={{
+      background: `url('/bgimages/truck-section.png')`,
+       backgroundSize: 'cover',
+      backgroundPosition:"center", height:"1050px", width:"100%", position: "relative" , overflow:"hidden"
+    }}
+     >
       <div className={styles.heading}>
         <h1>Journey to Flavors </h1>
         <p>Exploring the Road of Authentic Rice Delights</p>

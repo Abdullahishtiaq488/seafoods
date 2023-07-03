@@ -15,8 +15,8 @@ const Production = () => {
   return (
 
     <section style={{
-      backgroundImage: `url('/bgimages/fields.jpg')`,
-      backgroundSize: 'cover', backgroundPosition:"top", height:"auto"
+      background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('/bgimages/fields.jpg')`,
+       backgroundSize: 'cover', backgroundPosition:"top center", height:"auto"
     }}
   >
       <div className={styles.production}>

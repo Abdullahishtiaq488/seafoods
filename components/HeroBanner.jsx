@@ -32,7 +32,21 @@ const HeroBanner = ({ heroBanner }) => {
       onChange={handleSlideChange}
       interval={5000} transitionTime={1300} showThumbs={false} showStatus={false} infiniteLoop={true}>
 
-      <div className="hero-banner-container">
+      <div style={{
+
+        padding: '100px 40px',
+        backgroundImage: `url("/bgimages/page1.jpg")`,
+        backgroundPosition: 'bottom',
+        backgroundSize: 'cover',
+        position: 'relative',
+        height: '600px',
+        lineHeight: '0.9',
+        width: '100%',
+        textAlign: 'left',
+        color: 'white',
+      }}
+
+        className="hero-banner-container">
         <div className={`texta ${shouldAnimate ? 'text-animation' : ''}`}>
           <p className="beats-solo">{heroBanner.smallText}</p>
           <h3>{heroBanner.midText}</h3>
@@ -59,10 +73,25 @@ const HeroBanner = ({ heroBanner }) => {
           </div>
         </div>
       </div>
-      <div className='image2'>
+      <div style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.441), 
+        rgba(0, 0, 0, 0.441)), url("/bgimages/rice1.png")`,
+        backgroundPosition: 'center',
+        padding: '100px 40px',
+        height: '600px',
+        backgroundSize: 'cover',
+        textAlign: 'left',
+        color: '#fff',
+        position: 'relative',
+        padding: '40px',
+        lineHeight: '0.9',
+        width: '100%',
+      }}
+
+        className='image2'>
         <div className={`texta2 ${shouldAnimate2 ? 'text-animation' : ''}`}>
           <p className="beats-solo">{heroBanner.smallText}</p>
-          
+
           <h1>{heroBanner.largeText1}</h1>
           <h3 >{heroBanner.midText}</h3>
 
@@ -81,21 +110,37 @@ const HeroBanner = ({ heroBanner }) => {
             <Link href={`/product/${heroBanner.product}`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
-            
+
           </div>
         </div>
 
       </div>
 
-      <div className='image3'>
+      <div style={{
 
-      <div className={`texta3 ${shouldAnimate3 ? 'text-animation' : ''}`}>
-          
+        background: `linear-gradient(rgba(0, 0, 0, 0.141), 
+        rgba(0, 0, 0, 0.141)), url("/bgimages/salt1.png")`,
+        backgroundPosition: 'center',
+        padding: '100px 40px',
+        height: '600px',
+        backgroundSize: 'cover',
+        textAlign: 'left',
+        color: '#fff',
+        position: 'relative',
+        padding: '40px',
+        lineHeight: '0.9',
+        width: '100%',
+      }}
+      
+      className='image3'>
+
+        <div className={`texta3 ${shouldAnimate3 ? 'text-animation' : ''}`}>
+
           <h1>New</h1>
           <h3>Himalayan Salt</h3>
           <p className="beats-solo">Discount Up to 30% OFF </p>
-          
-<br />
+
+          <br />
           {/* <div className={`hero-banner-image ${shouldAnimate3 ? 'animation' : ''}`}>
             <Image src={bag1} layout="fill" objectFit="cover" alt="headphones" />
           </div>

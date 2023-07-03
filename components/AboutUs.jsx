@@ -1,7 +1,6 @@
 
 import styles from '../components/OurStyles/AboutUs.module.css';
 import Image from 'next/image';
-import tank from '../public/tank.png';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,7 +14,18 @@ const AboutUs = () => {
 
   return (
     <section >
-      <div className="AboutUs">
+      <div
+        style={{
+          background: `linear-gradient(rgba(0, 0, 0, 0.441), 
+          rgba(0, 0, 0, 0.441)), url("/bgimages/tankers.jpg")`,
+          backgroundPosition: 'center',
+          
+          backgroundSize: 'cover',
+        
+          
+          position: 'relative',
+          overflow: "hidden"
+        }}>
         
         
         <div className={styles.toptext}>

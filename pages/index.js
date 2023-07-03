@@ -9,7 +9,6 @@ import { Membership } from '../components';
 import { Production } from '../components';
 
 
-
 const Home = ({ products, bannerData }) => (
 
   <div>
@@ -42,11 +41,12 @@ const Home = ({ products, bannerData }) => (
       
     </div>
     
-      <Production />
+      
   
     <div>
       <Truck />
     </div>
+    
 
     {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
   </div>

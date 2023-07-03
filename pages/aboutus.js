@@ -7,7 +7,9 @@ import styles from "../styles/aboutus.module.css";
 import image1 from "../public/image-coming-soon.png";
 import { BsQuote } from 'react-icons/bs';
 import {GrDiamond} from 'react-icons/gr';
+
 import Certifications from './certifications';
+import { Production } from 'components';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -16,6 +18,8 @@ const AboutUs = () => {
 
   return (
     <section className={styles.aboutus}>
+
+    <div className={styles.wrapper}>
        <div className="products-heading">
       <h2>About Us</h2>
       <p>Know About our Team & Culture</p>
@@ -129,9 +133,9 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
      
           
       </div>
+      </div>
       
-
-
+      <Production />
     </section>
   );
 };
