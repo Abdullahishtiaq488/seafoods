@@ -26,7 +26,6 @@ body {
 
 /* background: url('../public/white2.jpeg'); */
 .app__bg {
- background-color: aliceblue;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -545,12 +544,12 @@ span.text-red {
   animation-delay: 2.1s;
 }
 
-.production {
+/* .production {
   background: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.351)), url("../public/fields.jpg");
   background-position: top;
   background-size: cover;
   height: auto;
-}
+} */
 
 .Truck-Section {
   background: url("../public/truck-section.jpg");

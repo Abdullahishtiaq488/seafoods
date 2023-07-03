@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import fields from "../public/bgimages/fields.jpg";
 import styles from '../components/OurStyles/Production.module.css';
 
 const Production = () => {
@@ -13,7 +14,11 @@ const Production = () => {
 
   return (
 
-    <section className="production">
+    <section style={{
+      backgroundImage: `url('/bgimages/fields.jpg')`,
+      backgroundSize: 'cover', backgroundPosition:"top", height:"auto"
+    }}
+  >
       <div className={styles.production}>
         <div data-aos="fade-right" data-aos-duration="5400" data-aos-delay="300" className={styles.toptext}>
           <p style={{ color: "red", marginBottom: "10px" }}>PRODUCTION</p>
