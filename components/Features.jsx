@@ -18,7 +18,7 @@ const Features = () => {
                     <RiExchangeDollarLine style={{fontSize:"90px"}} />
 
                 </div>
-                <h4>7 Day Exchange <br /> Policy </h4>
+                <h4 data-aos="fade-in" data-aos-duration="1800" >7 Day Exchange <br /> Policy </h4>
             </div>
 
             <div className={styles.containeritems}>
@@ -27,7 +27,7 @@ const Features = () => {
             
 
 </div>
-                <h4>Weekend Discount<br /> Coupon </h4>
+                <h4  data-aos="fade-in" data-aos-duration="1800">Weekend Discount<br /> Coupon </h4>
             </div>
 
             <div className={styles.containeritems}>
@@ -35,7 +35,7 @@ const Features = () => {
             
 <RiSecurePaymentLine style={{fontSize:"90px"}}  />
 </div>
-                <h4>Secure Payment<br /> methods </h4>
+                <h4  data-aos="fade-in" data-aos-duration="1800">Secure Payment<br /> methods </h4>
             </div>
 
             <div className={styles.containeritems}>
@@ -43,7 +43,7 @@ const Features = () => {
             
 <FaMapMarkerAlt style={{fontSize:"90px"}} />
 </div>
-                <h4>Track Your<br /> Package </h4>
+                <h4 data-aos="fade-in" data-aos-duration="1800">Track Your<br /> Package </h4>
             </div>
 
         </div>

@@ -46,8 +46,8 @@ const Navbar = () => {
         <Link href="/aboutus">
           <p className={router.pathname === '/aboutus' ? 'active' : ''}>About Us</p>
         </Link>
-        <Link href="/certifications">
-          <p className={router.pathname === '/certifications' ? 'active' : ''}>Our Brands</p>
+        <Link href="/brands">
+          <p className={router.pathname === '/brands' ? 'active' : ''}>Our Brands</p>
         </Link>
         <Link href="/contactus">
           <p className={router.pathname === '/contactus' ? 'active' : ''}>Contact Us</p>
