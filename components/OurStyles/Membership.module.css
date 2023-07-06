@@ -52,5 +52,15 @@
     .heading h1{
       font-size: 30px;
    }
+
+   .productsheading h2 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  
+  .productsheading p {
+    font-size: 14px;
+    font-weight: 300;
+  }
   }
   

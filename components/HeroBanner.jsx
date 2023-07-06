@@ -28,7 +28,9 @@ const HeroBanner = ({ heroBanner }) => {
   const shouldAnimate2 = activeSlide === 1;
   const shouldAnimate3 = activeSlide === 2;
   return (
-    <Carousel autoPlay={true}
+
+
+    <Carousel className='react-carousel'  autoPlay={true}
       onChange={handleSlideChange}
       interval={5000} transitionTime={1300} showThumbs={false} showStatus={false} infiniteLoop={true}>
 
@@ -166,6 +168,7 @@ const HeroBanner = ({ heroBanner }) => {
 
 
     </Carousel>
+    
   )
 }
 
