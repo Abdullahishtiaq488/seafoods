@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 import { client } from '../lib/client';
 import Image from 'next/image';
 import { Product, FooterBanner, HeroBanner, Truck, Features } from '../components';
@@ -16,12 +16,22 @@ const Home = ({ products, bannerData }) => (
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     <Features />
 
-    {/* <div className="products-heading">
-      <h2>Best Seller Products</h2>
-      <p>Here are some of our best products</p>
-    </div> */}
+    <div style={{marginTop:"80px"}} className="productsheading">
+      <h2>Our Recent Products</h2>
+      <p>Here are some of our recent products</p>
+    </div>
 
-   
+    <div className='product'>
+  {products?.slice(0, 4).map((product) => (
+    <Product key={product._id} product={product} />
+  ))}
+  
+</div>
+<div className='btn-container'>
+<Link href={`/products`}>
+              <button className='btn' type="button">Show More</button>
+            </Link>
+            </div>
 
     <div>
       <Membership />

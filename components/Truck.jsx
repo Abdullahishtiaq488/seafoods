@@ -12,7 +12,7 @@ const Truck = () => {
       backgroundPosition:"center", height:"1050px", width:"100%", position: "relative" , overflow:"hidden"
     }}
      >
-      <div className={styles.heading}>
+      <div className={styles.productsheading}>
         <h1>Journey to Flavors </h1>
         <p>Exploring the Road of Authentic Rice Delights</p>
       </div>

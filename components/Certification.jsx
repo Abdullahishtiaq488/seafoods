@@ -15,10 +15,11 @@ const Certification = () => {
 
   return (
     <section className={styles.certification}>
-      <div className={styles.heading}>
-        <h1>Our Membership</h1>
-        <p>Here are some of our Members</p>
-      </div>
+
+      <div className={styles.productsheading}>
+      <h2>Our Membership</h2>
+      <p>Here are some of our Members</p>
+    </div>
 
       <div className={styles.flexContainer}>
         <div data-aos="fade-down" data-aos-duration="1500"  data-aos-delay="0" className={styles.images}>

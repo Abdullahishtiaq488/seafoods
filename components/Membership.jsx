@@ -15,25 +15,26 @@ const Membership = () => {
 
   return (
     <section className={styles.certifications}>
-      <div className={styles.heading}>
-        <h1>Certifications</h1>
-        <p>We are certified by</p>
-      </div>
+
+<div className={styles.productsheading}>
+      <h2>Certifications</h2>
+      <p>Demonstrating Our Expertise</p>
+    </div>
 
       <div className={styles.flexContainer}>
-        <div data-aos="fade-down" data-aos-duration="1500"  data-aos-delay="0" className={styles.images}>
+        <div data-aos="zoom-out-down" data-aos-duration="1500"  data-aos-delay="0" className={styles.images}>
           <Image src={img1} alt='pic' />
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="1500"  data-aos-delay="600" className={styles.images}>
+        <div data-aos="zoom-out-down" data-aos-duration="1500"  data-aos-delay="600" className={styles.images}>
           <Image src={img2} alt='pic' />
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="1500"  data-aos-delay="1200" className={styles.images}>
+        <div data-aos="zoom-out-down" data-aos-duration="1500"  data-aos-delay="1200" className={styles.images}>
           <Image src={img3} alt='pic' />
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="1500"  data-aos-delay="1800" className={styles.images}>
+        <div data-aos="zoom-out-down" data-aos-duration="1500"  data-aos-delay="1800" className={styles.images}>
           <Image src={img4} alt='pic' />
         </div>
       </div>

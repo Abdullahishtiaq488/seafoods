@@ -11,25 +11,27 @@
   }
   
 
-  .heading{
+  .productsheading {
+    margin-top: 80px;
     text-align: center;
     
+    color: #324d67;
+  
+  }
+  
+  .productsheading h1 {
+    font-size: 55px;
+    font-weight: 800;
+  }
+  
+  .productsheading p {
+    font-size: 18px;
+    font-weight: 300;
   }
 
-  .heading h1 {
-    font-size: 65px;
-    color: rgba(34,34,34,255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 90px;
-  }
 
-  .heading p {
-    font-size: 20px;
-    margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-   
-  }
+ 
+ 
 
 
   @keyframes moveTruck {

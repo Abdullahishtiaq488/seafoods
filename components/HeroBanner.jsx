@@ -66,7 +66,7 @@ const HeroBanner = ({ heroBanner }) => {
 
 
           <div>
-            <Link href={`/products/`}>
+            <Link href={`/products`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
 
@@ -107,7 +107,7 @@ const HeroBanner = ({ heroBanner }) => {
           </div>
 
           <div>
-            <Link href={`/product/${heroBanner.product}`}>
+            <Link href={`/product`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
 
@@ -152,7 +152,7 @@ const HeroBanner = ({ heroBanner }) => {
           </div> */}
 
           <div>
-            <Link href={`/product/${heroBanner.product}`}>
+            <Link href={`/product`}>
               <button type="button">{heroBanner.buttonText}</button>
             </Link>
             {/* <div className="desc">
