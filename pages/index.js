@@ -27,9 +27,9 @@ const Home = ({ products, bannerData }) => (
   ))}
   
 </div>
-<div className='btn-container'>
+<div className='btn-container1'>
 <Link href={`/products`}>
-              <button className='btn' type="button">Show More</button>
+              <button className='btn1' type="button">Show More</button>
             </Link>
             </div>
 

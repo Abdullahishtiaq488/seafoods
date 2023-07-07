@@ -2,7 +2,7 @@
   
 .certifications{
     height: auto;
-    padding: 20px;
+    padding: 0px;
 }
 
 .heading{
@@ -36,6 +36,38 @@
     gap: 20px;
   }
 
+  .challanges h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+  }
+
+ 
+  
+  .challanges h1:before,
+  .challanges h1:after {
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1.4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }
+  
+  .challanges h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .challanges h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+
 
   @media (max-width: 768px) {
     .flexContainer {
@@ -49,5 +81,8 @@
     .heading h1{
       font-size: 35px;
    }
+   .challanges h1{
+    font-size: 26px;
+ }
   }
   

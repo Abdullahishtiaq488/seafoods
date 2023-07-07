@@ -15,35 +15,35 @@ const Features = () => {
         <div className={styles.Featurescontainer}>
             <div className={styles.containeritems}>
                 <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
-                    <RiExchangeDollarLine style={{fontSize:"90px"}} />
+                    <RiExchangeDollarLine style={{fontSize:"67px"}} />
 
                 </div>
-                <h4 data-aos="fade-in" data-aos-duration="1800" >7 Day Exchange <br /> Policy </h4>
+                <h5 data-aos="fade-in" data-aos-duration="1900" >7 Day Exchange <br /> Policy </h5>
             </div>
 
             <div className={styles.containeritems}>
             <div data-aos="zoom-in-down"  data-aos-duration="1500"className={styles.icons}>
-            <RiCoupon3Line style={{fontSize:"90px"}}  />
+            <RiCoupon3Line style={{fontSize:"67px"}}  />
             
 
 </div>
-                <h4  data-aos="fade-in" data-aos-duration="1800">Weekend Discount<br /> Coupon </h4>
+                <h5  data-aos="fade-in" data-aos-duration="1900">Weekend Discount<br /> Coupon </h5>
             </div>
 
             <div className={styles.containeritems}>
             <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
             
-<RiSecurePaymentLine style={{fontSize:"90px"}}  />
+<RiSecurePaymentLine style={{fontSize:"67px"}}  />
 </div>
-                <h4  data-aos="fade-in" data-aos-duration="1800">Secure Payment<br /> methods </h4>
+                <h5  data-aos="fade-in" data-aos-duration="1900">Secure Payment<br /> methods </h5>
             </div>
 
             <div className={styles.containeritems}>
             <div data-aos="zoom-in-down" data-aos-duration="1500" className={styles.icons}>
             
-<FaMapMarkerAlt style={{fontSize:"90px"}} />
+<FaMapMarkerAlt style={{fontSize:"67px"}} />
 </div>
-                <h4 data-aos="fade-in" data-aos-duration="1800">Track Your<br /> Package </h4>
+                <h5 data-aos="fade-in" data-aos-duration="1900">Track Your<br /> Package </h5>
             </div>
 
         </div>

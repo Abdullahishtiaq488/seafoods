@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from "../styles/certifications.module.css";
+import { BsQuote } from 'react-icons/bs';
+import {GrDiamond} from 'react-icons/gr';
 import certificate1 from "../public/certificate1.jpg";
 import certificate2 from "../public/certificate2.jpg";
 import certificate3 from "../public/certificate3.jpg";
@@ -14,12 +16,16 @@ const Certifications = () => {
     return (
         <section className={styles.certifications}>
             
-    <div className="products-heading">
-      <h2>Our Certifications</h2>
-      <p>Certified by famous organiztions</p>
-      <hr style={{ marginLeft: "30%", marginRight: "30%", marginTop: "15px" }} />
+            <div className='products-heading'>
+      <h1><GrDiamond size={70} /></h1>
+        <div className={styles.challanges}>
+        
+        <h1 >Our Certificates</h1>
+        </div>
+        
+        
        
-    </div>
+        </div>
            
             <div className={styles.certificates}>
                 <div className={styles.flexContainer}>

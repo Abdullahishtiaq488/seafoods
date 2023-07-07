@@ -53,16 +53,16 @@ const Navbar = () => {
           <p className={router.pathname === '/contactus' ? 'active' : ''}>Contact Us</p>
         </Link>
       </div>
-
+<div className='jewel'>
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
         <span className="cart-item-qty">{totalQuantities}</span>
       </button>
       
       <button type="button" className="menu-icon" onClick={toggleMenu}>
-        <AiOutlineMenu />
+        <AiOutlineMenu size={21}/>
       </button>
-
+      </div>
       {showCart && <Cart />}
     </div>
   )
