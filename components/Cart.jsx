@@ -102,9 +102,12 @@ const Cart = () => {
               <button type="button" className="btn" onClick={handleCheckout}>
                 Pay with Card <AiFillCreditCard  style={{color:"white",paddingTop:"2px"}}/>
               </button>
+              <div>
+              
               <button type="button" className="btn">
-                Pay with COD <FaMoneyBillAlt style={{color:"white",paddingTop:"2px"}}/>
-              </button>
+              <Link href="/payment">Pay with COD</Link> <FaMoneyBillAlt style={{color:"white",paddingTop:"2px"}}/>
+              </button> 
+              </div>
             </div>
           </div>
         )}
