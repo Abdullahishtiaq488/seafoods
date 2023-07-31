@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Product } from '../components';
 import styles from "../styles/products.module.css";
 import { client } from '../lib/client';
@@ -15,12 +16,29 @@ const Products = ({ products }) => {
       <h2>Best Seller Products</h2>
       <p>Here are some of our best products</p>
     </div>
+    <div className={styles.navbarcontainer}>
+
+      <div className={styles.navbar}> 
+      <Link href="#rice">
+          <p >Rice</p>
+        </Link>
+        <Link href="#juice">
+          <p >Juice</p>
+        </Link>
+        <Link href="#spices">
+          <p >Spices</p>
+        </Link>
+        <Link href="#salt">
+          <p >Salt</p>
+        </Link>  
+      </div>
+    </div>
 
     <div className={styles.titles}>
   <h2>Rice</h2>
 
 
-      <div className='product'>
+      <div id='rice' className='product'>
         {getCategoryProducts('rice').map((product) => (
           <Product key={product._id} product={product} />
         ))}
@@ -31,7 +49,7 @@ const Products = ({ products }) => {
 <div className={styles.titles}>
   <h2>Salt</h2>
 
-      <div className='product'>
+      <div id='salt' className='product'>
         {getCategoryProducts('salt').map((product) => (
           <Product key={product._id} product={product} />
         ))}
@@ -42,7 +60,7 @@ const Products = ({ products }) => {
       <div className={styles.titles}>
   <h2>Juice</h2>
 
-      <div className='product'>
+      <div id='juice' className='product'>
         {getCategoryProducts('juice').map((product) => (
           <Product key={product._id} product={product} />
         ))}
@@ -52,7 +70,7 @@ const Products = ({ products }) => {
       <div className={styles.titles}>
   <h2>Spices</h2>
 
-      <div className='product'>
+      <div id='spices' className='product'>
         {getCategoryProducts('spice').map((product) => (
           <Product key={product._id} product={product} />
         ))}

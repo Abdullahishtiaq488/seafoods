@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
   return (
     
     <div style={{
-      background: `url('/bgimages/blue3.jpeg')`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'repeat',

@@ -54,11 +54,18 @@ const Navbar = () => {
         </Link>
       </div>
 <div className='jewel'>
+
+<Link href={`#products`}>
+              <button className='btn1' type="button">Shop Now</button>
+            </Link>
+            
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
         <span className="cart-item-qty">{totalQuantities}</span>
       </button>
-      
+    
+            
+
       <button type="button" className="menu-icon" onClick={toggleMenu}>
         <AiOutlineMenu size={21}/>
       </button>

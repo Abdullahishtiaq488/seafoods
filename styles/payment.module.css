@@ -1,0 +1,36 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    margin: 30px;
+    border:  2px solid black;
+}
+
+.formdata{
+    display: flex;  
+    width: 50%;
+    padding: 30px;
+    border: 2px solid black ;
+}
+
+.mycheckout{
+    width: 50%;
+    padding: 20px;
+    margin: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity{
+
+}
+
+.quantityprice{
+    
+}

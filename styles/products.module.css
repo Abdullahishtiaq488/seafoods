@@ -11,12 +11,46 @@
   margin-bottom: 80px;
 }
 
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 30px;
+}
 
+.navbar p {
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 1s, text-decoration 4s;
+}
 
+/* Change the color and add underline on hover */
+.navbar p:hover {
+  color: red;
+  text-decoration: underline;
+}
 
-
+.navbarcontainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
 
 
 @media (max-width: 768px) {
-  
+
+  .navbar p {
+    font-size: 14px;
+    
+  }
 }
+
+
+
