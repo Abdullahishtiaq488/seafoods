@@ -66,7 +66,7 @@ a {
 }
 
 .marquee-text {
-  font-size: 29px;
+  font-size: 24px;
   font-weight: 600;
   margin: 60px 0px;
   color: #a6252a;
@@ -81,11 +81,14 @@ a {
 
 .track {
   position: absolute;
-  white-space: nowrap;
+  
   will-change: transform;
   animation: marquee 15s linear infinite;
   width: 180%;
+  height: 300px;
 }
+
+
 
 .track:hover {
   animation-play-state: paused;
@@ -1457,6 +1460,9 @@ span.text-red {
     overflow: hidden;
   }
 
+  .btn-container{
+    flex-direction: column;
+  }
   .footer-container {
     flex-direction: column;
   }

@@ -72,19 +72,5 @@
 }
 
 
-@media (max-width: 768px) {
-    .section{
-        flex-direction: column;
-    }
-    .heading h1{
-        font-size: 40px;
-     }
-     .form {
-        width: 99%;
-     }
-     .names{
-        flex-direction: column;
-     }
-    
-  }
+
   

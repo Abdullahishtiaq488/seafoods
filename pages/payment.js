@@ -9,13 +9,15 @@ import styles from "../styles/payment.module.css";
 const Payment = () => {
 
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
-  const [total, setTotal] = useState(0);
-  const shippingCharges = 100;
+  
+  
   const [step, setStep] = useState(1);
 
+  const shippingCharges = 100;
+  const [total, setTotal] = useState(0);
+
+  // Function to calculate total amount
   const calculateTotal = () => {
-    // Your logic to calculate the order total goes here
-    // For example, if you have a list of items with prices, you can sum them up like this:
     const totalAmount = totalPrice + shippingCharges;
     setTotal(totalAmount);
   };
@@ -23,7 +25,7 @@ const Payment = () => {
   // Call the calculateTotal function whenever there is a change in the order or relevant data
   useEffect(() => {
     calculateTotal();
-  }, []); //
+  }, [totalPrice]);
 
   // State for Step 1
   const [fullname, setFullname] = useState('');
@@ -59,7 +61,7 @@ const Payment = () => {
        
     <div className={styles.form}>
     <div className={styles.mycheckout}>
-    <h3>Pay ${total} </h3>
+    <h3>Pay ${totalPrice} </h3>
     <div className={styles.cpricing}> 
     
               <hr />
