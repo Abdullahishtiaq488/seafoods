@@ -5,15 +5,51 @@
     padding: 20px;
     height: auto;
     margin: 30px;
-    border:  2px solid black;
+    border:  1px solid gray;
 }
 
 .formdata{
     display: flex;  
     width: 50%;
     padding: 30px;
-    border: 2px solid black ;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
+
+/* Apply styles to all labels and inputs inside the form */
+.formdata form input {
+  display: block; /* Display each label and input on a new line */
+  margin-bottom: 10px; /* Add space between each label and input */
+  margin-top: 6px;
+  width: 100%!important; /* Make the inputs 100% width of their container */
+}
+
+/* Apply styles to inputs only */
+.formdata form input {
+width: 100%;
+  padding: 8px; /* Add some padding inside the input fields */
+  border: 1px solid #ccc; /* Add a border to the input fields */
+  border-radius: 5px; /* Add some rounded corners to the input fields */
+}
+
+.formdata form{
+    width: 100%!important;
+    
+    /* Add a box shadow effect */
+
+    
+}
+
+
+.formdata form textarea{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc; /* Add a border to the input fields */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .mycheckout{
     width: 50%;
@@ -25,10 +61,34 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    padding: 5px;
 }
 
-.quantity{
+.pricetag{
+    padding: 10px;
+}
 
+.pricings{
+    padding: 5px;
+    margin: 5px;
+}
+
+.cpricing{
+    padding: 15px
+}
+
+.quantity p span{
+ 
+ margin-left: 8px;
+
+}
+
+
+.itemprice{
+    position: absolute;
+    right: 0px;
+    
 }
 
 .quantityprice{
