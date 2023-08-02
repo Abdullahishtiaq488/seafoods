@@ -1,25 +1,30 @@
 import React from 'react';
 import Link from 'next/link';
-
 import { urlFor } from '../lib/client';
+import AddToCartButton from './AddToCartButton'; // Import the new component
 
-const Product = ({ product: { image, name, slug, price } }) => {
+const Product = ({ product }) => {
+  const { image, name, slug, price } = product;
+
   return (
     <div>
-      <Link href={`/product/${slug.current}`}>
+      
         <div className="product-card">
-          <img 
+        <Link href={`/product/${slug.current}`}>
+          <div>
+          <img
             src={urlFor(image && image[0])}
-            
-            
             className="product-image"
           />
           <p className="product-name">{name}</p>
           <p className="product-price">${price}</p>
+          </div>
+          </Link>
+          <AddToCartButton product={product} /> {/* Use the new component */}
         </div>
-      </Link>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

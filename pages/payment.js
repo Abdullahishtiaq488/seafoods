@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect , useRef} from 'react';
 import { useStateContext } from '../context/StateContext';
 import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping, AiFillCreditCard } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
 import { FaMoneyBillAlt } from 'react-icons/fa';
 import { urlFor } from '../lib/client';
+import emailjs from "@emailjs/browser";
 import styles from "../styles/payment.module.css";
 
 const Payment = () => {
@@ -46,11 +47,62 @@ const Payment = () => {
   const nextStep = () => setStep((prevStep) => prevStep + 1);
   const prevStep = () => setStep((prevStep) => prevStep - 1);
 
-  const handleSubmit = (e) => {
+  const [formSubmitionStatus, setFormSubmitionStatus] = useState("notSubmitted");
+
+  useEffect(() => {
+    if (formSubmitionStatus === "submitted") {
+    }
+  }, [formSubmitionStatus]);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to the server)
-    console.log('Form submitted!');
+  
+    let emailContent = "Order Details:\n\n";
+  
+    cartItems.forEach((item) => {
+      emailContent += `Product: ${item.name}\n`;
+      emailContent += `Price: $${item.price}\n`;
+      emailContent += `Quantity: ${item.quantity}\n\n`;
+    });
+  
+    emailContent += `Total Price: $${totalPrice}\n`;
+  
+
+    const templateParams = {
+      fullname,
+      email,
+      mobilenumber,
+      address,
+      city,
+      landmark,
+      emailContent,
+      comment,
+    };
+  
+    emailjs
+      .send(
+        "service_jzfw6yo",
+        "template_1j9rjvf",
+        templateParams,
+        "rPCAkT0spbuNCimo5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setFormSubmitionStatus("submitted");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  
+    form.current.reset();
+    alert("info sent successfully");
   };
+  
 
   return (
     <section>
@@ -127,19 +179,19 @@ const Payment = () => {
       <div className={styles.formdata}>
       
       
-      <form className={styles.form1} onSubmit={handleSubmit}>
+      <form className={styles.form1} ref={form} onSubmit={sendEmail}>
 
         {step === 1 && (
           <section>
             <label>Full Name</label>
             <br />
-            <input type="text" placeholder="Fullname" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
+            <input name='fullname' type="text" placeholder="Fullname" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
             <br /><label>Mobile Number</label>
             <br />
-            <input type="number"  value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
+            <input name='mobilenumber' type="number"  value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
             <br /><label>Email</label>
             <br />
-            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input name='email' type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
             
             {/* ... Other input fields for Step 1 */}
             <br /><br /><button className='btn2' type="button" onClick={nextStep}>Next</button>
@@ -150,13 +202,13 @@ const Payment = () => {
           <section>
             <label>Shipping Address</label>
             <br />
-            <input type="text" placeholder="House no./ Street/ Area" value={address} required onChange={(e) => setAddress(e.target.value)} />
+            <input name='address' type="text" placeholder="House no./ Street/ Area" value={address} required onChange={(e) => setAddress(e.target.value)} />
             <br /><label>LandMark (optional)</label>
             <br />
-            <input type="text" placeholder="Eg. Beside Train Station" value={landmark} onChange={(e) => setLandmark(e.target.value)} />
+            <input name='landmark' type="text" placeholder="Eg. Beside Train Station" value={landmark} onChange={(e) => setLandmark(e.target.value)} />
             <br /> <label>City</label>
             <br />
-            <input type="text" placeholder="CityName" value={city} onChange={(e) => setCity(e.target.value)} />
+            <input name='city' type="text" placeholder="CityName" value={city} onChange={(e) => setCity(e.target.value)} />
            
             <br /><br /> {/* ... Other input fields for Step 2 */}
             <button className='btn2'  type="button" onClick={prevStep}>Previous</button>
@@ -168,11 +220,11 @@ const Payment = () => {
           <section>
             <label>Additional Notes</label>
             <br />
-            <textarea type="text" placeholder="House no./ Street/ Area" value={comment} required onChange={(e) => setComment(e.target.value)} />
+            <textarea name='comment' type="text" placeholder="House no./ Street/ Area" value={comment} required onChange={(e) => setComment(e.target.value)} />
            
             <br /><br /> {/* ... Other input fields for Step 2 */}
             <button className='btn2' type="button" onClick={prevStep}>Previous</button>
-            <button className='btn2' type="button" onClick={nextStep}>Submit</button>
+            <button className='btn2' type="submit" onClick={sendEmail}>Submit</button>
           </section>
         )}
 

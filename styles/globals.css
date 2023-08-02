@@ -249,7 +249,7 @@ span.text-red {
 }
 
 .product-card:hover {
-  transform: scale(1.1, 1.1)
+  transform: scale(1.03, 1.03)
 }
 
 .product-image {
@@ -869,7 +869,7 @@ span.text-red {
 
 .product-container {
   margin-top: 15px;
-  overflow: auto;
+  overflow: scroll;
   max-height: 70vh;
   padding: 20px 10px;
 }
@@ -883,6 +883,26 @@ span.text-red {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.scrollable-content {
+  /* Set a fixed height or max-height for the scrollable content */
+  max-height: 300px; /* Set the desired height */
+
+  /* Add the following properties to hide the scrollbar */
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+
+/* Apply custom styling to the scrollable area if needed */
+.scrollable-content::-webkit-scrollbar {
+  width: 0; /* Safari and Chrome */
+  height: 0;
+}
+
+
+
+
 
 .product .cart-product-image {
   width: 120px;
@@ -1021,7 +1041,15 @@ span.text-red {
   transform: scale(1.1, 1.1);
 }
 
+.add-to-cart{
+  padding: 4px;
+  border: none;
+  background-color: #a6252a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
 
+}
  
 
 
@@ -1620,9 +1648,9 @@ span.text-red {
   } */
 
   .product-card{
-    width: 110px;
-    height: 110px;
-    margin-top: 50px;
+    width: 105px;
+    height: 105px;
+    margin-top: 70px;
   }
 
   .products-container{
