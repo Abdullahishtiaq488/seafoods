@@ -71,6 +71,16 @@
     width: 60%;
 }
 
-
+@media (max-width: 768px) {
+   .names{
+    flex-direction: column;
+   }
+   .section{
+    flex-direction: column;
+   }
+   .form{
+    width: 100%;
+   }
+  }
 
   
