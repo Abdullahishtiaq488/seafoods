@@ -1,19 +1,21 @@
 .form{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    position: relative;
+    align-items: flex-start;
     padding: 20px;
     height: auto;
     margin: 30px;
     border:  1px solid gray;
+    gap: 20px;
 }
 
 .formdata{
     display: flex;  
-    width: 50%;
+    width: 59%;
     padding: 30px;
+    background-color: rgba(241, 236, 236, 0.76);
     
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 /* Apply styles to all labels and inputs inside the form */
@@ -27,10 +29,21 @@
 /* Apply styles to inputs only */
 .formdata form input {
 width: 100%;
-  padding: 8px; /* Add some padding inside the input fields */
-  border: 1px solid #ccc; /* Add a border to the input fields */
-  border-radius: 5px; /* Add some rounded corners to the input fields */
+  padding: 12px; /* Add some padding inside the input fields */
+  border: 1px solid white; /* Add a border to the input fields */
+  border-radius: 2px; /* Add some rounded corners to the input fields */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); 
 }
+
+.formdata form select {
+    width: 100%; /* Makes the select element fill its container */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); 
+    margin-top: 6px;
+  }
 
 .formdata form{
     width: 100%!important;
@@ -48,14 +61,50 @@ width: 100%;
     width: 100%;
     border: 1px solid #ccc; /* Add a border to the input fields */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); 
 }
 
+
+.checkoutbox{
+    width: 38%;
+    
+}
+
+.placeorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .mycheckout{
-    width: 50%;
-    padding: 20px;
-    margin: 30px;
+    
+    padding: 30px;
+    
+    background-color: rgba(241, 236, 236, 0.76);
+    
 }
+
+.btn {
+    width: 95%;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    
+    text-transform: uppercase;
+    background-color: #a6252a;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
 
 .box{
     display: flex;
@@ -102,7 +151,7 @@ width: 100%;
     .formdata{
         width: 100%;
     }
-    .mycheckout{
+    .checkoutbox{
         width: 100%;
     }
     .cpricing{
@@ -116,4 +165,10 @@ width: 100%;
         margin-left: 5px;
        
        }
+    .btn{
+        font-size: 18px;   
+    }
+    .formdata h3{
+        font-size: 16px;
+    }
   }

@@ -16,10 +16,11 @@ const Product = ({ product }) => {
             src={urlFor(image && image[0])}
             className="product-image"
           />
+          </div></Link>
           <p className="product-name">{name}</p>
           <p className="product-price">${price}</p>
-          </div>
-          </Link>
+          
+          
           <AddToCartButton product={product} /> {/* Use the new component */}
         </div>
       
