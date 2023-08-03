@@ -1648,9 +1648,10 @@ span.text-red {
   } */
 
   .product-card{
-    width: 105px;
-    height: 105px;
-    margin-top: 70px;
+    width: 135px;
+    height: 135px;
+    margin-bottom: 70px;
+    margin-top: 20px;
   }
 
   .products-container{
@@ -1658,8 +1659,8 @@ span.text-red {
   }
 
   .product-image{
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
   }
 
   .product-name{
