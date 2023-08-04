@@ -20,8 +20,8 @@ const Product = ({ product }) => {
           <p className="product-name">{name}</p>
           <p className="product-price">${price}</p>
           
-          
-          <AddToCartButton product={product} /> {/* Use the new component */}
+          <div className='carto-container'>
+          <AddToCartButton product={product} /> {/* Use the new component */}</div>
         </div>
       
     </div>
