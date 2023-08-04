@@ -122,8 +122,8 @@ const Payment = () => {
 
 
           <form className={styles.form1} ref={form} onSubmit={sendEmail}>
-          <h3>This is a DELIVERY ORDER<br />
-Just a last step, please enter your details:</h3><br /><br />
+            <h3>This is a DELIVERY ORDER<br />
+              Just a last step, please enter your details:</h3><br /><br />
             <label for="title">Title:</label><br />
             <select value={title} id="title" name="title" onChange={(e) => setTitle(e.target.value)}>
               <option value="Mr.">Mr.</option>
@@ -135,11 +135,11 @@ Just a last step, please enter your details:</h3><br /><br />
             <input name='fullname' type="text" placeholder="Enter your full name" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
             <br /><label for="mobile">Mobile Number</label>
             <br />
-            <input id="mobile" name='mobilenumber' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text"  value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
+            <input id="mobile" name='mobilenumber' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
             <br /><label for="mobile2">Alternate Number</label>
             <br />
-            <input id="mobile2" name='mobilenumber2' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid alternate mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text"  value={anothernumber} onChange={(e) => setAnothernumber(e.target.value)} required />
-            
+            <input id="mobile2" name='mobilenumber2' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid alternate mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={anothernumber} onChange={(e) => setAnothernumber(e.target.value)} required />
+
             <br /><label>Email</label>
             <br />
             <input name='email' type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
@@ -163,7 +163,7 @@ Just a last step, please enter your details:</h3><br /><br />
             <textarea name='comment' type="text" placeholder="Do you have any additional instructions for us?" value={comment} required onChange={(e) => setComment(e.target.value)} />
 
             <br />
-          
+
 
 
 
@@ -186,7 +186,14 @@ Just a last step, please enter your details:</h3><br /><br />
                       <div >
 
                         <div className={styles.box}>
-                          <div></div>
+                          <div style={{marginTop:"3px"}} ><button
+                            type="button"
+                            
+                            className="remove-item"
+                            onClick={() => onRemove(item)}
+                          >
+                            <TiDeleteOutline />
+                          </button></div>
                           <div className={styles.itemprice}>
                             <h4 >${item.price} each</h4>
                           </div>

@@ -1,6 +1,10 @@
 .products {
-  padding: 20px;
+  
   height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
   
 }
 
@@ -17,7 +21,7 @@
   align-items: center;
   justify-content: center;
   
-  gap: 30px;
+  gap: 50px;
 }
 
 .navbar p {
@@ -34,10 +38,12 @@
 
 .navbarcontainer{
   display: flex;
+  background-color: rgba(241, 236, 236, 0.76);
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 15px;
+  font-weight: bold;
   margin-bottom: 20px;
   position: relative;
   width: 100%;
@@ -45,17 +51,24 @@
 
 
 @media (max-width: 768px) {
-
+  .navbarcontainer{
+    padding: 10px;
+    width: 100%!important;
+  }
+.navbar{
+  gap: 35px;
+}
   .navbar p {
     font-size: 14px;
- 
+    font-weight: bold;
   }
+
   .products {
-padding: 10px;
+
   }
   .titles{
-    padding-left: 2px;
-    margin-top: 70px!important;
+    padding: 5px;
+    margin-top: 10px!important;
   
   }
 

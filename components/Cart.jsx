@@ -13,6 +13,10 @@ const Cart = () => {
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
 
+const handleCheckin = () => {
+  setShowCart(false)
+}
+
   const handleCheckout = async () => {
     const stripe = await getStripe();
 
@@ -104,7 +108,7 @@ const Cart = () => {
               </button>
               <div>
               
-              <button type="button" className="btn">
+              <button onClick={handleCheckin} type="button" className="btn">
               <Link href="/payment">Pay with COD</Link> <FaMoneyBillAlt style={{color:"white",paddingTop:"2px"}}/>
               </button> 
               </div>
