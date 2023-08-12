@@ -14,7 +14,9 @@ const Navbar = () => {
   const navbarRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
+    setTimeout(() => {
+      setMenuOpen(!isMenuOpen);
+    }, 300);
   };
 
   const handleOutsideClick = (event) => {
@@ -33,7 +35,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container" ref={navbarRef}>
       <div className='logos'>
-        <Image src={Logo} width={110} height={100} alt="pic" />
+        <Image src={Logo} width={100} height={90} alt="pic" />
       </div>
 
       <div className={`links ${isMenuOpen ? 'open' : ''}`}>
@@ -55,7 +57,7 @@ const Navbar = () => {
       </div>
 <div className='jewel'>
 
-<Link href={`#products`}>
+<Link href={`/#products`}>
               <button className='btn1' type="button">Shop Now</button>
             </Link>
             

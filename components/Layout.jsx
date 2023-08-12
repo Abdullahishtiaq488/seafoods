@@ -25,10 +25,12 @@ const Layout = ({ children }) => {
       <Head>
         <title>Super Foods Pvt Ltd.</title>
       </Head>
-      <header>
+      
       <TopBelt />
+      <div style={{position:"sticky", top:"0px", zIndex:"20", backgroundColor:"white"}}>
         <Navbar />
-      </header>
+        </div>
+    
       <main className="main-container">
         {children}
       </main>
