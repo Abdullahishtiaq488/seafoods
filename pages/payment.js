@@ -12,7 +12,7 @@ const Payment = () => {
 
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
   const router = useRouter();
-
+  const [isFormValid, setIsFormValid] = useState(false);
   const [step, setStep] = useState(1);
 
   const shippingCharges = 100;
@@ -61,6 +61,8 @@ const Payment = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (isFormValid) {
+
     let emailContent = "Order Details:\n\n";
 
     cartItems.forEach((item) => {
@@ -97,7 +99,7 @@ const Payment = () => {
           console.log(result.text);
           console.log("message sent");
           setFormSubmitionStatus("submitted");
-          router.push('/success');
+          
         },
         (error) => {
           console.log(error.text);
@@ -106,6 +108,10 @@ const Payment = () => {
 
     form.current.reset();
     alert("info sent successfully");
+    router.push('/success');
+  } else {
+    alert("Please fill in all required fields before submitting.");
+  }
   };
 
 
@@ -132,35 +138,45 @@ const Payment = () => {
             </select><br /><br />
             <label>Full Name</label>
             <br />
-            <input name='fullname' type="text" placeholder="Enter your full name" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
+            <input
+  name='fullname'
+  type="text"
+  placeholder="Enter your full name"
+  value={fullname}
+  onChange={(e) => {
+    setFullname(e.target.value);
+    setIsFormValid(
+      e.target.value !== ''
+    );
+  }} />
             <br /><label for="mobile">Mobile Number</label>
             <br />
-            <input id="mobile" name='mobilenumber' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
+            <input id="mobile" name='mobilenumber' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={mobilenumber} onChange={(e) =>{ setMobilenumber(e.target.value);  setIsFormValid(e.target.value !== ''  );}} required />
             <br /><label for="mobile2">Alternate Number</label>
             <br />
-            <input id="mobile2" name='mobilenumber2' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid alternate mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={anothernumber} onChange={(e) => setAnothernumber(e.target.value)} required />
+            <input id="mobile2" name='mobilenumber2' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid alternate mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={anothernumber} onChange={(e) =>{ setAnothernumber(e.target.value);  setIsFormValid(e.target.value !== ''  );}} required />
 
             <br /><label>Email</label>
             <br />
-            <input name='email' type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input name='email' type="email" placeholder="Email" value={email} onChange={(e) => { setEmail(e.target.value);  setIsFormValid(e.target.value !== ''  );}} required />
 
             <br />
             <label>Delivery Address</label>
             <br />
-            <input name='address' type="text" placeholder="House no./ Street/ Area" value={address} required onChange={(e) => setAddress(e.target.value)} />
+            <input name='address' type="text" placeholder="House no./ Street/ Area" value={address} required onChange={(e) =>{ setAddress(e.target.value); setIsFormValid(e.target.value !== '' );}} />
             <br /><label>Nearest LandMark</label>
             <br />
-            <input name='landmark' type="text" placeholder="Eg. Beside Train Station" value={landmark} onChange={(e) => setLandmark(e.target.value)} />
+            <input name='landmark' type="text" placeholder="Eg. Beside Train Station" value={landmark} onChange={(e) => {setLandmark(e.target.value);  setIsFormValid(e.target.value !== ''  );}} />
             <br /> <label>City</label>
             <br />
-            <input name='city' type="text" placeholder="Enter the name of your city" value={city} onChange={(e) => setCity(e.target.value)} />
+            <input name='city' type="text" placeholder="Enter the name of your city" value={city} onChange={(e) =>{ setCity(e.target.value);  setIsFormValid(e.target.value !== ''  );}} />
 
             <br />
 
 
             <label>Additional Instructions</label>
             <br />
-            <textarea name='comment' type="text" placeholder="Do you have any additional instructions for us?" value={comment} required onChange={(e) => setComment(e.target.value)} />
+            <textarea name='comment' type="text" placeholder="Do you have any additional instructions for us?" value={comment} required onChange={(e) =>{ setComment(e.target.value);  setIsFormValid(e.target.value !== '' );}} />
 
             <br />
 
