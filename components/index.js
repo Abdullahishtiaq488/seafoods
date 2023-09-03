@@ -12,3 +12,4 @@ export { default as Truck } from './Truck';
 export { default as Cart } from './Cart';
 export { default as TopBelt } from './TopBelt';
 export { default as Features } from './Features';
+export { default as Nav } from './Nav';

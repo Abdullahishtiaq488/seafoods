@@ -2,11 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 import { client } from '../lib/client';
 import Image from 'next/image';
-import { Product, FooterBanner, HeroBanner, Truck, Features } from '../components';
+import { Product, FooterBanner, HeroBanner, Truck, Features, Nav } from '../components';
 import { Certification } from '../components';
 import { AboutUs } from '../components';
 import { Membership } from '../components';
 import { Production } from '../components';
+import Salt from "../public/SAL.png";
+import Rice from "../public/RIC.png";
+import Juices from "../public/JUI.png";
+import Spices from "../public/SPI.png";
+import Pastes from "../public/PAS.png";
 import styles from "../styles/products.module.css";
 
 
@@ -29,29 +34,16 @@ return (
   <h2>Best Seller Products</h2>
   <p>Here are some of our best products</p>
 </div>
-<div className={styles.navbarcontainer}>
 
-  <div className={styles.navbar}> 
-  <Link href="#rice">
-      <p >Rice</p>
-    </Link>
-    <Link href="#juice">
-      <p >Juice</p>
-    </Link>
-    <Link href="#spices">
-      <p >Spices</p>
-    </Link>
-    <Link href="#salt">
-      <p >Salt</p>
-    </Link>  
-  </div>
-</div>
+
 
 <div className={styles.titles}>
-<h2>Rice</h2>
+<div id='rice'  className={styles.banner}>
+<Image src={Rice} alt='Rice' />
+</div>
 
 
-  <div id='rice' className='product'>
+  <div className='product'>
     {getCategoryProducts('rice').map((product) => (
       <Product key={product._id} product={product} />
     ))}
@@ -60,20 +52,27 @@ return (
   </div>
 
 <div className={styles.titles}>
-<h2>Salt</h2>
 
-  <div id='salt' className='product'>
+<div id='salt' className={styles.banner}>
+<Image src={Salt} alt='Salt' />
+</div>
+  <div  className='product'>
     {getCategoryProducts('salt').map((product) => (
       <Product key={product._id} product={product} />
     ))}
   </div>
   </div>
+
+  
+
   
 
   <div className={styles.titles}>
-<h2>Juice</h2>
+    <div id='juice' className={styles.banner}>
+<Image src={Juices} alt='Juices' />
+</div>
 
-  <div id='juice' className='product'>
+  <div  className='product'>
     {getCategoryProducts('juice').map((product) => (
       <Product key={product._id} product={product} />
     ))}
@@ -81,9 +80,11 @@ return (
   </div>
 
   <div className={styles.titles}>
-<h2>Spices</h2>
+  <div id='spices' className={styles.banner}>
+<Image src={Spices} alt='Spices' />
+</div>
 
-  <div id='spices' className='product'>
+  <div  className='product'>
     {getCategoryProducts('spice').map((product) => (
       <Product key={product._id} product={product} />
     ))}

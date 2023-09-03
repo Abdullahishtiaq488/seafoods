@@ -48,12 +48,29 @@ const Navbar = () => {
         <Link href="/aboutus">
           <p className={router.pathname === '/aboutus' ? 'active' : ''}>About Us</p>
         </Link>
+
+        <Link href="/#rice">
+          <p className={router.pathname === '/#rice' ? 'active' : ''}>Rice</p>
+        </Link>
+        <Link href="/#spices">
+          <p className={router.pathname === '/#spices' ? 'active' : ''}>Spices</p>
+        </Link>
+        <Link href="/#salt">
+          <p className={router.pathname === '/#salt' ? 'active' : ''}>Salt</p>
+        </Link>
+        <Link href="/#juice">
+          <p className={router.pathname === '/#juice' ? 'active' : ''}>Juices</p>
+        </Link>
+        <Link href="/#pastes">
+          <p className={router.pathname === '/#pastes' ? 'active' : ''}>Pastes</p>
+        </Link>
         <Link href="/brands">
           <p className={router.pathname === '/brands' ? 'active' : ''}>Our Brands</p>
         </Link>
         <Link href="/contactus">
           <p className={router.pathname === '/contactus' ? 'active' : ''}>Contact Us</p>
         </Link>
+
       </div>
 <div className='jewel'>
 

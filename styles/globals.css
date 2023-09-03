@@ -123,7 +123,7 @@ span.text-red {
   align-items: center;
   font-size: larger;
   font-weight: 500;
-  gap: 35px;
+  gap: 25px;
 }
 
 .links p {
@@ -875,7 +875,7 @@ span.text-red {
 }
 
 .product-container {
-  margin-top: 15px;
+  margin-top: 10px;
   overflow: scroll;
   max-height: 70vh;
   padding: 20px 10px;

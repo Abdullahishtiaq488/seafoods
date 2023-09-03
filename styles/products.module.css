@@ -11,16 +11,29 @@
 
 
 .titles{
-  padding-left: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
+.titles .banner{
+
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.NavMan{
+  position: sticky!important;
+  top: 35px;
+}
 .navbar{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   
+  z-index: 19;
+  top: 20%;
   gap: 50px;
 }
 
@@ -67,9 +80,14 @@
 
   }
   .titles{
-    padding: 5px;
     margin-top: 10px!important;
   
+  }
+  .titles .banner{
+    padding: 0%;
+    margin: 0%;
+    border-radius: 20px;
+    overflow: hidden;
   }
 
 }
