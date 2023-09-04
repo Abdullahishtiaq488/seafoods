@@ -25,7 +25,7 @@ const Home = ({ products, bannerData }) => {
 return (
   <div>
    
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+    {/* <HeroBanner heroBanner={bannerData.length && bannerData[0]} /> */}
     {/* <Features /> */}
     
     <section className={styles.products}>
@@ -35,6 +35,7 @@ return (
   <p>Here are some of our best products</p>
 </div>
 
+<Nav />
 
 
 <div className={styles.titles}>
