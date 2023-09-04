@@ -44,10 +44,8 @@ export default {
         list: [
           { title: 'Salt', value: 'salt' },
           { title: 'Rice', value: 'rice' },
-          { title: 'Pastes', value: 'spice' },
+          { title: 'Spice', value: 'spice' },
           { title: 'Juice', value: 'juice' },
-          { title: 'Spices', value: 'spices' },
-          
           
           // Add more categories as needed
         ],
