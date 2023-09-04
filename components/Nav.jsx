@@ -15,11 +15,14 @@ const Nav = () => {
   <Link href="#juice">
     <p >Juice</p>
   </Link>
-  <Link href="#spices">
-    <p >Spices</p>
+  <Link href="#pastes">
+    <p >Pastes</p>
   </Link>
   <Link href="#salt">
     <p >Salt</p>
+  </Link>
+  <Link href="#spices">
+    <p >Spices</p>
   </Link>  
 </div>
 </div>

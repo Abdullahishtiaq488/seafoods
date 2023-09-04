@@ -25,7 +25,7 @@ const Home = ({ products, bannerData }) => {
 return (
   <div>
    
-    {/* <HeroBanner heroBanner={bannerData.length && bannerData[0]} /> */}
+    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     {/* <Features /> */}
     
     <section className={styles.products}>
@@ -81,8 +81,8 @@ return (
   </div>
 
   <div className={styles.titles}>
-  <div id='spices' className={styles.banner}>
-<Image src={Spices} alt='Spices' />
+  <div id='pastes' className={styles.banner}>
+<Image src={Pastes} alt='Spices' />
 </div>
 
   <div  className='product'>
@@ -91,6 +91,19 @@ return (
     ))}
   </div>
   </div>
+
+  <div className={styles.titles}>
+    <div id='spices' className={styles.banner}>
+<Image src={Spices} alt='Juices' />
+</div>
+
+  <div  className='product'>
+    {getCategoryProducts('spices').map((product) => (
+      <Product key={product._id} product={product} />
+    ))}
+  </div>
+  </div>
+
 </section>
 
     {/* <div style={{marginTop:"80px"}} className="productsheading">
